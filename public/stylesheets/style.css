@@ -18,3 +18,8 @@
 .collection-item form {
   margin-top: -5px;
 }
+
+#login {
+  color: green;
+  size: 500px;
+}
