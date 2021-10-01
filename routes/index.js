@@ -6,7 +6,11 @@ router.get('/', function(req, res) {
   // Where do you want to go for the root route
   // in the student demo this was res.redirect('/students'), what do you want? 
   // no /users, whatever your main resource is
-  res.render('index');
+  // res.redirect()
+  // res.send('Test')
+  res.render('index.ejs', {
+
+  });
 });
 
 // Google OAuth login route
