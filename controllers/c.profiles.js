@@ -4,7 +4,14 @@ module.exports = {
     index,
     new: newProfile,
     create,
-    delete: deleteProfile
+    delete: deleteProfile,
+    show
+}
+
+function show(req, res){
+    res.render('profiles/v.p.show.ejs', {
+        profile: Profile.getOne(req.params.id)
+    })
 }
 
 function index(req, res) {

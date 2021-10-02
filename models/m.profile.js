@@ -5,9 +5,9 @@ const mongoose = require('mongoose');
 // need to have googleID on my userSchema
 
 const profiles = [
-    {id: 125223, name: 'Amar Pan', proj1: "https://github.com/amarpan/simon-game" },
-    {id: 127904, name: 'Alondra Guzman', proj1: "github.com/amarpan/simon-game"},
-    {id: 139608, name: 'Shawn Park', proj1: "https://github.com/amarpan/simon-game"}
+    {id: 125223, name: 'Amar Pan', proj1: "https://github.com/amarpan/simon-game", pic:"" },
+    {id: 127904, name: 'Alondra Guzman', proj1: "github.com/amarpan/simon-game", pic:""},
+    {id: 139608, name: 'Shawn Park', proj1: "https://github.com/amarpan/simon-game", pic:""}
   ];
   
   module.exports = {
@@ -21,8 +21,8 @@ const profiles = [
     return profiles;
   }
 
-  function getOne(){
-
+  function getOne(id){
+    return profiles.find(profile => profile.id === parseInt(id));
   }
 
   function create(profile) {
