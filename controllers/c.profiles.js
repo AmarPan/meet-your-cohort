@@ -5,7 +5,27 @@ module.exports = {
     new: newProfile,
     create,
     delete: deleteProfile,
-    show
+    show,
+    template,
+    edit,
+    update,
+}
+
+function update(req, res) {
+    // The following will also do the job
+    // req.body.done = !!req.body.done;
+    Profile.update(req.params.id, req.body);
+    res.redirect('/profiles');
+  }
+
+function edit(req, res){
+    res.render('profiles/v.p.edit.ejs', {
+        profile: Profile.getOne(req.params.id)
+      });
+}
+
+function template(req, res) {
+    res.render('v.template.ejs')
 }
 
 function show(req, res){
@@ -33,3 +53,4 @@ function deleteProfile(req, res) {
     Profile.deleteOne(req.params.id)
     res.redirect('/profiles');
 }
+

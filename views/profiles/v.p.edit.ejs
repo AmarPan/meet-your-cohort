@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/index.css">
+</head>
+<body>
+    <nav>
+        <img class="logo" src="/images/favicon.ico" alt="">
+        <a href="/profiles">ALL PROFILES   </a>
+        <a id="login" href="/auth/google">___Login with Google</a><br>
+    </nav>
+    <header>
+        <h1>Meet Your Classmates</h1>
+    </header>
+    <section>
+        <form id="new-form" action="/profiles/<%= profile.id %>?_method=PUT" method="POST" autocomplete="off">
+            <label>Name:</label>
+            <input type="text" name="name" placeholder="Richard Dickson" value="<%= profile.name %>"><br>
+            <!-- <label>Picture:</label>
+            <input type="file" id="myFile" name="pic"> -->
+            <img src="/images/fb16.png" alt="">
+            <input type="text" name="fb" placeholder="https://www.facebook.com/user" value="<%= profile.fb %>"><br>
+            <img src="/images/li16.png" alt="">
+            <input type="text" name="li" placeholder="https://www.linkedin.com/in/user" value="<%= profile.li %>"><br>
+            <img src="/images/gh16.png" alt="">
+            <input type="text" name="gh" placeholder="https://github.com/user" value="<%= profile.h %>"><br>
+            <label>Project #1 Link:</label>
+            <input type="text" name="proj1" placeholder="https://github.com/user/project1" value="<%= profile.proj1 %>"><br>
+            <label>Project #1 Link:</label>
+            <input type="text" name="proj2" placeholder="https://github.com/user/project2" value="<%= profile.proj2 %>"><br>
+            <label>Birthplace:</label>
+            <input type="text" name="birthplace" placeholder="Las Vegas, NV, USA" value="<%= profile.birthplace %>"><br>
+            <label>Hometown:</label>
+            <input type="text" name="hometown" placeholder="Pallet Town, OR" value="<%= profile.hometown %>"><br>
+            <label>Current Place of Residence:</label>
+            <input type="text" name="res" placeholder="Detroit, MI" value="<%= profile.res %>"><br>
+            <label>Timezone:</label>
+            <select name="timezone" value="<%= profile.timezone %>">>
+              <option value="PST">PST</option>
+              <option value="EST">EST</option>
+              <option value="CT">CT</option>
+              <option value="MT">MT</option>
+            </select><br>
+            <label>Age:</label>
+            <input type="text" name="age" placeholder="None of your business" value="<%= profile.age %>"><br>
+             <input type="submit" value="Save Profile">
+          </form>
+        
+        
+    </section>
+    
+</body>
+</html>

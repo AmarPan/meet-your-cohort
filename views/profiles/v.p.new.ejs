@@ -5,12 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/stylesheets/base.css">
+    <link rel="stylesheet" href="/stylesheets/index.css">
 </head>
 <body>
-    <form id="new-form" action="/profiles" method="POST">
+  <nav>
+    <img class="logo" src="/images/favicon.ico" alt="">
+    <a href="/profiles">ALL PROFILES   </a>
+    <a id="login" href="/auth/google">___Login with Google</a><br>
+</nav>
+<header>
+    <h1>Meet Your Classmates</h1>
+</header>
+    <form id="new-form" action="/profiles" method="POST" autocomplete="off">
         <label>Name:</label>
-        <input type="text" name="name" placeholder="Cosmo Kramer"><br>
+        <input type="text" name="name" placeholder="Richard Dickson"><br>
         <!-- <label>Picture:</label>
         <input type="file" id="myFile" name="pic"> -->
         <img src="/images/fb16.png" alt="">
@@ -21,16 +29,12 @@
         <input type="text" name="gh" placeholder="https://github.com/user"><br>
         <label>Project #1 Link:</label>
         <input type="text" name="proj1" placeholder="https://github.com/user/project1"><br>
-        <label>Project #1 Link:</label>
-        <input type="text" name="proj1" placeholder="https://github.com/user/project1"><br>
-        <label>Project #1 Link:</label>
-        <input type="text" name="proj1" placeholder="https://github.com/user/project1"><br>
         <label>Project #2 Link:</label>
         <input type="text" name="proj2" placeholder="https://github.com/user/project2"><br>
         <label>Birthplace:</label>
         <input type="text" name="birthplace" placeholder="Las Vegas, NV, USA"><br>
         <label>Hometown:</label>
-        <input type="text" name="hometown" placeholder="Las Vegas, NV"><br>
+        <input type="text" name="hometown" placeholder="Pallet Town, OR"><br>
         <label>Current Place of Residence:</label>
         <input type="text" name="res" placeholder="Detroit, MI"><br>
         <label>Timezone:</label>
@@ -41,21 +45,7 @@
           <option value="MT">MT</option>
         </select><br>
         <label>Age:</label>
-        <input type="text" name="age" placeholder="16"><br>
-
-
-        <!-- <label>Project #1 README Link:</label>
-        <input type="text" name="proj1ReadmeLink" placeholder="https://github.com/user/game">
-        <label>MPAA Rating</label>
-        <select name="mpaaRating">
-          <option value="G">G</option>
-          <option value="PG">PG</option>
-          <option value="PG-13">PG-13</option>
-          <option value="R">R</option>
-        </select>
-        <label>Now Showing:</label>
-        <input type="checkbox" name="nowShowing" checked>
-         -->
+        <input type="text" name="age" placeholder="None of your business"><br>
          <input type="submit" value="Add Profile">
       </form>
 </body>

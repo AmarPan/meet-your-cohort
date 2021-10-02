@@ -14,7 +14,8 @@ const profiles = [
     getAll,
     getOne,
     create,
-    deleteOne
+    deleteOne,
+    update
   };
   
   function getAll() {
@@ -33,4 +34,10 @@ const profiles = [
   function deleteOne(id){
     const idx = profiles.findIndex(profile => profile.id === parseInt(id));
     profiles.splice(idx, 1);
-}
+  }
+
+  function update(id, profile){
+    const idx = profiles.findIndex(profile => profile.id === parseInt(id));
+    profile.id = parseInt(id);
+    profiles.splice(idx, 1, profile);
+  }

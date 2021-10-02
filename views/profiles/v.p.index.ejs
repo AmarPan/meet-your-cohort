@@ -5,17 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/stylesheets/base.css">
+    <link rel="stylesheet" href="/stylesheets/index.css">
 </head>
 <body>
+    <nav>
+        <img class="logo" src="/images/favicon.ico" alt="">
+        <a href="/profiles">ALL PROFILES   </a>
+        <a id="login" href="/auth/google">___Login with Google</a><br>
+    </nav>
+    <header>
+        <h1>Meet Your Classmates</h1>
+    </header>
     <a href="/profiles/new">Add new profile</a>
     <ul>
         <% profiles.forEach(p => { %>
             <li>
+               
+               <img id="indiv" src="/images/favicon.ico" alt=""><br>
+               <a href="/profiles/<%= p.id %>"><%= p.name %></a> <br>
                <form class="delete-form" action="/profiles/<%= p.id %>?_method=DELETE" method="POST">
-                   <button type="submit">X</button>
-               </form>
-               <a href="/profiles/<%= p.id %>"><%= p.name %></a> 
+                <button type="submit">X</button>
+            </form>
             </li>
            <% }) %>
     </ul>

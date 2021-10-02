@@ -2,6 +2,7 @@
   /* color: red; */
   box-sizing: border-box;
   text-align: center;
+  /* border: 5px solid purple; */
 }
 
 html {
@@ -14,18 +15,46 @@ html {
 
 li {
   list-style: none;
+  border: 5px solid green;
+}
+
+li img {
+  margin-top: 1px;
 }
 
 
 body {
   border: 5px solid red;
   display: grid;
-  grid-template-rows: .33fr .66fr;
+  grid-template-rows: .1fr .05fr .66fr;
   grid-template-columns: 1fr;
   color: red;
   background-color: oldlace;
-  height: 90vh;
+  /* height: 90vh; */
   padding-bottom: 0%;
+}
+
+body nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 50px;
+}
+
+body ul li {
+  border: 5px solid red;
+  margin-bottom: 5px;
+  background-color: white;
+}
+
+nav img {
+  padding-top: 0;
+  margin-top: 0;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  object-fit: contain;
+  margin-right: auto;
+  height: 46px;
 }
 
 section p {
@@ -34,14 +63,39 @@ section p {
 header{
   margin: 0;
   padding:0;
+  background-color: red;
+  /* border: 5px solid purple;  */
+  height: 55px;
 }
 
 header > h1 {
   /* display: inline-flex; */
   color:white;
-  background-color: red;
+  padding-top: 0;
+  /* display: inline; */
+  /* border: 5px solid purple;  */
+  margin-top: 7px;
+  margin-left: 400px;
+  width: 500px;
+  
+}
+
+header img {
   margin: 0;
-  padding: 0;
+}
+
+body li {
+  border: 5px solid white;
+  background-color: red;
+  color: white;
+  width: 300px;
+  height: 85px;
+  margin-left: 435px;
+  font-feature-settings:
+}
+
+form input {
+  width: 350px;
 }
 
 footer {
@@ -84,5 +138,9 @@ footer {
   padding-bottom: 0;
   margin-bottom: 0;
 
+}
+
+#indiv {
+  height: 30px;
 }
 
