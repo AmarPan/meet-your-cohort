@@ -1,5 +1,9 @@
-var router = require('express').Router();
+const router = require('express').Router();
+const Profile = require('../models/m.profile')
+const profileController = require('../controllers/c.profiles')
+
 const passport = require('passport');
+
 
 // The root route renders our only view
 router.get('/', function(req, res) {
@@ -8,7 +12,7 @@ router.get('/', function(req, res) {
   // no /users, whatever your main resource is
   // res.redirect()
   // res.send('Test')
-  res.render('index.ejs', {
+  res.render('v.home.ejs', {
 
   });
 });

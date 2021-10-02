@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/base.css">
+</head>
+<body>
+    <a href="/profiles/new">Add new profile</a>
+    <ul>
+        <% profiles.forEach(p => { %>
+            <li>
+               <form class="delete-form" action="/profiles/<%= p.id %>?_method=DELETE" method="POST">
+                   <button type="submit">X</button>
+               </form>
+               <a href="/profiles/<%= p.id %>"><%= p.name %><br><%= p.proj1 %><br><br></a> 
+            </li>
+           <% }) %>
+    </ul>
+    
+</body>
+</html>

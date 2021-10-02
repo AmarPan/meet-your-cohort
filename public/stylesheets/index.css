@@ -1,11 +1,12 @@
-* {
+/* * {
   color: red;
   text-align: center;
   background-color: oldlace;
-}
+} */
 
 header {
   display: inline-flex;
+  color: purple;
 }
 
 .brand-logo {
@@ -37,6 +38,6 @@ header {
 .logo {
   width: 30px;
   height: 30px;
-  padding-top: 20px;
+  padding-top: 95px;
   margin: 5px;
 }

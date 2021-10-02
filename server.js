@@ -1,3 +1,12 @@
+/*
+    Name: Amar Panjwani
+    Title: Meet Your Classmates (SEI Project 2)
+    Email: amar.panjwani@gmail.com
+    Date: 10/1/21
+*/
+
+
+
 var express = require('express');
 var path = require('path');
 var logger = require('morgan');
@@ -18,8 +27,8 @@ require('./config/database');
 // configure Passport
 require('./config/passport');
 
-var indexRouter = require('./routes/index')
-var profilesRouter = require('./routes/profiles')
+var indexRouter = require('./routes/r.index')
+var profilesRouter = require('./routes/r.profiles') // routers are mounted
 
 
 // view engine setup
