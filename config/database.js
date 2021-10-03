@@ -7,6 +7,7 @@ mongoose.connect(process.env.DATABASE_URL ,{
   useCreateIndex: true
 });
 
+// shortcut to moongoose.connect obj
 const db = mongoose.connection;
 
 // database connection event
