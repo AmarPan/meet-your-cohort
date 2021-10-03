@@ -1,12 +1,18 @@
 const Profile = require('../models/m.profile')
 
+Profile.create({
+    name: 'Jim McFly',
+    age: 32
+}, function (err, profileDoc) {
+    console.log(profileDoc);
+});
+
 module.exports = {
     index,
     new: newProfile,
     create,
     delete: deleteProfile,
     show,
-    template,
     edit,
     update,
 }
@@ -16,19 +22,15 @@ function update(req, res) {
     // req.body.done = !!req.body.done;
     Profile.update(req.params.id, req.body);
     res.redirect('/profiles');
-  }
+}
 
-function edit(req, res){
+function edit(req, res) {
     res.render('profiles/v.p.edit.ejs', {
         profile: Profile.getOne(req.params.id)
-      });
+    });
 }
 
-function template(req, res) {
-    res.render('v.template.ejs')
-}
-
-function show(req, res){
+function show(req, res) {
     res.render('profiles/v.p.show.ejs', {
         profile: Profile.getOne(req.params.id)
     })
@@ -36,8 +38,8 @@ function show(req, res){
 
 function index(req, res) {
     res.render('profiles/v.p.index.ejs', {
-            profiles: Profile.getAll()
-        })
+        profiles: Profile.getAll()
+    })
 }
 
 function newProfile(req, res) {

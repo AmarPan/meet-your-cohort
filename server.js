@@ -24,6 +24,7 @@ var app = express();
 
 // connect to the MongoDB with mongoose
 require('./config/database');
+
 // configure Passport
 require('./config/passport');
 
