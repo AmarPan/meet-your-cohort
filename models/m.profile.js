@@ -6,7 +6,14 @@ const mongoose = require('mongoose');
 
 // need to have googleID on my userSchema
 
+const reviewSchema = new mongoose.Schema({
+  content: String,
+  rating: {type: Number, min: 1, max: 5, default: 5}
+}, {
+  timestamps: true
+});
 
+// one profile has many reviews
 const profileSchema = new mongoose.Schema({
   name: {
     type: String,
@@ -21,9 +28,13 @@ const profileSchema = new mongoose.Schema({
   gh: String,
   port: String,
   proj1: String,
+  proj1Reviews: [reviewSchema],
   proj2: String,
+  proj2Reviews: [reviewSchema],
   proj3: String,
+  proj3Reviews: [reviewSchema],
   proj4: String,
+  proj4Reviews: [reviewSchema],
 
   loc: String,
   tZone: ['PST','EST','CT','MT'],
@@ -34,8 +45,8 @@ const profileSchema = new mongoose.Schema({
   ed: String,
   work: String,
   
-  likes: [String],
-  dislikes: [String],
+  likes: String,
+  dislikes: String,
   googleID: String
 }, {
   timestamps: true

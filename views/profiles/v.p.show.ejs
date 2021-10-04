@@ -19,99 +19,187 @@
         </nav>
         <h1>Meet Your Classmates</h1>
     </header> -->
-    <%- include('../partials/header.ejs') %>
+<%- include('../partials/header.ejs') %>
 
     <section>
-        <h1><%= profile.name %></h1>
+        <h1><u>
+                <%= profile.name %>
+            </u></h1>
         <table>
             <thead>
                 <tr>
-                    <th>BIO</th>
-                    <th>PROJECTS</th>
-                    <th>SOCIALS</th>
-                </tr>
+                    <th><u>BIO</u></th>
+                    <th><u>PROJECTS</u></th>
+                    <th><u>CONTACT INFO</u></th>
+                </tr></u>
             </thead>
-                <tr> 1
-                    <td>Nickname: <%= profile.nick  %></td>
-                    <td>Project #1 Link: <a href="<%= profile.proj1 %>" target="_blank"><%= profile.proj1 %></a></td>
-                    <td>Email: <%= profile.email %></td>
-                </tr>
-                <tr>2
-                    <td>Location: <%= profile.loc %></td>
-                    <td></td>
-                    <td>Phone: <%= profile.phone %></td>
-                </tr>
-                <tr>3
-                    <td>Timezone: <%= profile.tZone %></td>
-                    <td></td>
-                    <td>Add to SMS Text Group Chat? <%= profile.grpChat %> </td>
-                </tr>
-                <tr>4
-                    <td>Age: <%= profile.age %> </td>
-                    <td></td>
-                    <td>Portfolio:<a href="<%= profile.port %>" target="_blank"><%= profile.port %></a></td>
-                </tr>
-                <tr>5
-                    <td>Birthday: <%= profile.bDay %> </td>
-                    <td>Project #2 Link: <a href="<%= profile.proj2 %>" target="_blank"><%= profile.proj2 %></a></td>
-                    <td> <img src="/images/gh16.png" alt=""><a href="<%= profile.fb %>" target="_blank"><%= profile.fb %></a></td>
-                </tr>
-                <tr>6
-                    <td>Education: <%= profile.ed %> </td>
-                    <td></td>
-                    <td><img src="/images/li16.png" alt=""><a href="<%= profile.li %>" target="_blank"><%= profile.li %></a></td>
-                </tr>
-                <tr>7
-                    <td>Previous Career: <%= profile.work %> </td>
-                    <td></td>
-                    <td><img src="/images/fb16.png" alt=""><a href="<%= profile.fb %>" target="_blank"><%= profile.fb %></a></td>
-                </tr>
-                <tr>8
-                    <td>Likes: <%= profile.likes %></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>9
-                    <td>Dislikes: <%= profile.dislikes %></td>
-                    <td>Project #3 Link: <a href="<%= profile.proj3 %>" target="_blank"><%= profile.proj3 %></a></td>
-                    <td></td>
-                </tr>
-                <tr>10
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>11
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>12
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>13
-                    <td></td>
-                    <td>Project #4 Link: <a href="<%= profile.proj4 %>" target="_blank"><%= profile.proj4 %></a></td>
-                    <td></td>
-                </tr>
-                <tr>14
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>15
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
+            <tr> 1
+                <td>Nickname: <%= profile.nick %>
+                </td>
+                <td>Project #1 Link:<br> <a href="<%= profile.proj1 %>" target="_blank">
+                        <%= profile.proj1 %>
+                    </a><br><br></td>
+                <td>Email: <%= profile.email %>
+                </td>
+            </tr>
+            <tr>2
+                <td>Location: <%= profile.loc %>
+                </td>
+                <td>
+                    <form action="/profiles/<%= profile._id %>/proj1reviews" method="POST">
+                        <label>Project 1 Review:<br></label>
+                        <textarea name="content"></textarea>
+                        <label>Rating:</label>
+                        <select name="rating">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5"selected>5</option>
+                        </select>
+                        <input type="submit" value="Submit Review">
+                    </form>
+                </td>
+                <td>Phone: <%= profile.phone %>
+                </td>
+            </tr>
+            <tr>3
+                <td>Timezone: <%= profile.tZone %>
+                </td>
+                <td></td>
+                <td>Add to SMS Text Group Chat? <%= profile.grpChat %>
+                </td>
+            </tr>
+            <tr>4
+                <td>Age: <%= profile.age %>
+                </td>
+                <td>Project #2 Link:<br> <a href="<%= profile.proj2 %>" target="_blank">
+                        <%= profile.proj2 %>
+                    </a></td>
+                </td>
+                <td>Portfolio:<a href="<%= profile.port %>" target="_blank">
+                        <%= profile.port %>
+                    </a><br><br></td>
+            </tr>
+            <tr>5
+                <td>Birthday: <%= profile.bDay %>
+                </td>
+                <td>
+                    <form action="/profiles/<%= profile._id %>/proj2reviews" method="POST">
+                        <label>Project 2 Review:</label>
+                        <textarea name="content"></textarea>
+                        <label>Rating:</label>
+                        <select name="rating">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5"selected>5</option>
+                        </select>
+                        <input type="submit" value="Submit Review">
+                    </form>
+                </td>
+                <td> <img src="/images/gh16.png" alt=""><a href="<%= profile.fb %>" target="_blank">
+                        <%= profile.fb %>
+                    </a></td>
+            </tr>
+            <tr>6
+                <td>Education: <%= profile.ed %>
+                </td>
+                <td></td>
+                <td><img src="/images/li16.png" alt=""><a href="<%= profile.li %>" target="_blank">
+                        <%= profile.li %>
+                    </a></td>
+            </tr>
+            <tr>7
+                <td>Previous Career: <%= profile.work %>
+                </td>
+                <td>Project #3 Link: <a href="<%= profile.proj3 %>" target="_blank">
+                        <%= profile.proj3 %>
+                    </a></td>
+                <td><img src="/images/fb16.png" alt=""><a href="<%= profile.fb %>" target="_blank">
+                        <%= profile.fb %>
+                    </a></td>
+            </tr>
+            <tr>8
+                <td>Likes: <%= profile.likes %>
+                </td>
+                <td>
+                    <form action="/profiles/<%= profile._id %>/proj3reviews" method="POST">
+                        <label>Project 3 Review:</label>
+                        <textarea name="content"></textarea>
+                        <label>Rating:</label>
+                        <select name="rating">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5" selected>5</option>
+                        </select>
+                        <input type="submit" value="Submit Review">
+                    </form>
+                </td>
+                <td></td>
+            </tr>
+            <tr>9
+                <td>Dislikes: <%= profile.dislikes %>
+                </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>10
+                <td></td>
+                <td>Project #4 Link: <a href="<%= profile.proj4 %>" target="_blank">
+                        <%= profile.proj4 %>
+                    </a></td>
+                <td></td>
+            </tr>
+            <tr>11
+                <td></td>
+                <td>
+                    <form action="/profiles/<%= profile._id %>/proj4reviews" method="POST">
+                        <label>Project 4 Review:</label>
+                        <textarea name="content"></textarea>
+                        <label>Rating:</label>
+                        <select name="rating">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5" selected>5</option>
+                        </select>
+                        <input type="submit" value="Submit Review">
+                    </form>
+                </td>
+                <td></td>
+            </tr>
+            <tr>12
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>13
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>14
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>15
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
         </table>
         <a href="/profiles/<%= profile.id %>/edit">Edit Profile</a>
     </section>
-    
-    
-    
-  
-</body>
-</html>
+
+
+
+
+    </body>
+
+    </html>
