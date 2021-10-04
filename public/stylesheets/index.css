@@ -1,17 +1,24 @@
 * {
   /* color: red; */
   box-sizing: border-box;
+  margin: 0;
+  padding:0;
   text-align: center;
   /* border: 5px solid purple; */
 }
 
 html {
-
   background-color: black;
-  height: 80vh;
-  width: 100vw;
+  /* height: 80vh;
+  width: 100vw; */
   
 }
+
+body {
+  max-width: 960px;
+  margin: auto;
+}
+
 
 li {
   list-style: none;
@@ -32,6 +39,8 @@ body {
   background-color: oldlace;
   /* height: 90vh; */
   padding-bottom: 0%;
+  max-width: 960px;
+  width: 100%;
 }
 
 body nav {
@@ -41,10 +50,17 @@ body nav {
   height: 50px;
 }
 
+body ul {
+  margin: auto;
+  max-width: 960;
+}
+
 body ul li {
   border: 5px solid red;
-  margin-bottom: 5px;
   background-color: white;
+  margin: auto;
+  margin-bottom: 5px;
+  max-width: 960px;
 }
 
 nav img {
@@ -60,29 +76,34 @@ nav img {
 section p {
   display: inline;
 }
+
 header{
-  margin: 0;
-  padding:0;
+  margin: auto;
+  padding: auto;
   background-color: red;
   /* border: 5px solid purple;  */
-  height: 55px;
+  max-width: 960px;
+  width: 100%;
+  color:white;
+  
 }
 
 header > h1 {
   /* display: inline-flex; */
-  color:white;
-  padding-top: 0;
+  
   /* display: inline; */
   /* border: 5px solid purple;  */
-  margin-top: 7px;
-  margin-left: 400px;
-  width: 500px;
+  /* margin-top: 7px;
+  margin-left: 400px; */
+  /* max-width: 960px; */
+  margin: auto;
+  width: 100%;
   
 }
 
-header img {
+/* header img {
   margin: 0;
-}
+} */
 
 body li {
   border: 5px solid white;
@@ -91,7 +112,6 @@ body li {
   width: 300px;
   height: 85px;
   margin-left: 435px;
-  font-feature-settings:
 }
 
 form input {
@@ -129,7 +149,6 @@ footer {
 }
 
 #login {
-  color: green;
   size: 500px;
 }
 

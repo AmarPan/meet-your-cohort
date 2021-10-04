@@ -10,12 +10,13 @@
     <link rel="stylesheet" href="/stylesheets/index.css">
 </head>
 <body>
-    <nav>
-        <img class="logo" src="/images/favicon.ico" alt="">
-        <a href="/profiles">ALL PROFILES   </a>
-        <a id="login" href="/auth/google">___Login with Google</a><br>
-    </nav>
+    
     <header>
+        <nav>
+            <img class="logo" src="/images/favicon.ico" alt="">
+            <a href="/profiles">ALL PROFILES   </a>
+            <a id="login" href="/auth/google">___Login with Google</a><br>
+        </nav>
         <h1>Meet Your Classmates</h1>
     </header>
 
@@ -71,8 +72,8 @@
                 </tr>
                 <tr>9
                     <td>Dislikes: <%= profile.dislikes %></td>
-                    <td></td>
                     <td>Project #3 Link: <a href="<%= profile.proj3 %>" target="_blank"><%= profile.proj3 %></a></td>
+                    <td></td>
                 </tr>
                 <tr>10
                     <td></td>

@@ -31,11 +31,21 @@ const Profile = require('../models/m.profile')
 module.exports = {
     new: newProfile,
     create,
-    index
+    index,
+    show
     // delete: deleteProfile,
     // show,
     // edit,
     // update,
+}
+
+function show(req, res){
+    Profile.findById(req.params.id, function(err, profile){
+        console.log(profile);
+        res.render('profiles/v.p.show.ejs', {
+            profile: profile
+        })
+    })
 }
 
 function index(req, res){

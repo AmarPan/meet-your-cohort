@@ -6,6 +6,7 @@ const passport = require('passport');
 
 router.get('/', profilesCtrl.index);
 router.get('/new', profilesCtrl.new);
+router.get('/:id', profilesCtrl.show)
 router.post('/', profilesCtrl.create);
 
 
