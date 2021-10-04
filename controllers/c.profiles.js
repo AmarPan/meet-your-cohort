@@ -44,7 +44,10 @@ function newProfile(req, res) {
 
 function create(req, res) {
     console.log(req.body)
+    req.body.age = parseInt(req.body.age)
+    req.body.grpChat = !!req.body.grpChat
     Profile.create(req.body)
+    console.log(req.body)
     res.redirect('/profiles')
 }
 
