@@ -40,10 +40,10 @@ module.exports = {
 }
 
 function show(req, res){
-    Profile.findById(req.params.id, function(err, profile){
-        console.log(profile);
+    Profile.findById(req.params.id, function(err, foundProfile){
+        console.log(foundProfile);
         res.render('profiles/v.p.show.ejs', {
-            profile: profile
+            profile: foundProfile
         })
     })
 }
