@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const Profile = require('../models/m.profile')
-const profileController = require('../controllers/c.profiles')
+const profileCtrl = require('../controllers/c.profiles')
 
 const passport = require('passport');
 
