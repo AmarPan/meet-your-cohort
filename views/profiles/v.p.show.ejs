@@ -21,40 +21,90 @@
 
     <section>
         <h1><%= profile.name %></h1>
-        <h3>Email: <%= profile.email %></h3>
-        <h3>Phone: <%= profile.phone %></h3>
-        <h3>Add to Text Group Chat? <%= profile.grpChat ? 'Yes' : 'None' %></h3>
-
-        <img src="/images/li16.png" alt="">
-        <a href="<%= profile.li %>" target="_blank"><%= profile.li %></a><br><br>
-
-        <img src="/images/fb16.png" alt="">
-        <a href="<%= profile.fb %>" target="_blank"><%= profile.fb %></a><br><br>
-
-        <img src="/images/gh16.png" alt="">
-        <a href="<%= profile.fb %>" target="_blank"><%= profile.fb %></a><br><br>
-
-        <h3>Portfolio: </h3>
-        <a href="<%= profile.port %>" target="_blank"><%= profile.port %></a><br><br>
-        <h3>Project #1 Link: </h3>
-        <a href="<%= profile.proj1 %>" target="_blank"><%= profile.proj1 %></a><br><br>
-        <h3>Project #2 Link:</h3>
-        <a href="<%= profile.proj2 %>" target="_blank"><%= profile.proj2 %></a><br><br>
-        <h3>Project #3 Link:</h3>
-        <a href="<%= profile.proj3 %>" target="_blank"><%= profile.proj3 %></a><br><br>
-        <h3>Project #4 Link:</h3>
-        <a href="<%= profile.proj4 %>" target="_blank"><%= profile.proj4 %></a><br><br>
-
-        <h3>Current Location: <%= profile.loc %></h3>
-        <h3>Timezone: <%= profile.tZone %></h3>
-        <h3>Birthplace: <%= profile.bPlace %></h3>
-        <h3>Ethnicity: <%= profile.eth %></h3>
-        <h3>Age: <%= profile.age %></h3>
-        <h3>Birthday: <%= profile.bDay %></h3>
-        <h3>Education: <%= profile.ed %></h3>
-        <h3>Previous Career: <%= profile.work %></h3>
-        <h3>Likes: <%= profile.likes %></h3>
-        <h3>Dislikes: <%= profile.dislikes %></h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>BIO</th>
+                    <th>PROJECTS</th>
+                    <th>SOCIALS</th>
+                </tr>
+            </thead>
+                <tr> 1
+                    <td>Nickname: <%= profile.nick  %></td>
+                    <td>Project #1 Link: <a href="<%= profile.proj1 %>" target="_blank"><%= profile.proj1 %></a></td>
+                    <td>Email: <%= profile.email %></td>
+                </tr>
+                <tr>2
+                    <td>Location: <%= profile.loc %></td>
+                    <td></td>
+                    <td>Phone: <%= profile.phone %></td>
+                </tr>
+                <tr>3
+                    <td>Timezone: <%= profile.tZone %></td>
+                    <td></td>
+                    <td>Add to SMS Text Group Chat? <%= profile.grpChat %> </td>
+                </tr>
+                <tr>4
+                    <td>Age: <%= profile.age %> </td>
+                    <td></td>
+                    <td>Portfolio:<a href="<%= profile.port %>" target="_blank"><%= profile.port %></a></td>
+                </tr>
+                <tr>5
+                    <td>Birthday: <%= profile.bDay %> </td>
+                    <td>Project #2 Link: <a href="<%= profile.proj2 %>" target="_blank"><%= profile.proj2 %></a></td>
+                    <td> <img src="/images/gh16.png" alt=""><a href="<%= profile.fb %>" target="_blank"><%= profile.fb %></a></td>
+                </tr>
+                <tr>6
+                    <td>Education: <%= profile.ed %> </td>
+                    <td></td>
+                    <td><img src="/images/li16.png" alt=""><a href="<%= profile.li %>" target="_blank"><%= profile.li %></a></td>
+                </tr>
+                <tr>7
+                    <td>Previous Career: <%= profile.work %> </td>
+                    <td></td>
+                    <td><img src="/images/fb16.png" alt=""><a href="<%= profile.fb %>" target="_blank"><%= profile.fb %></a></td>
+                </tr>
+                <tr>8
+                    <td>Likes: <%= profile.likes %></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>9
+                    <td>Dislikes: <%= profile.dislikes %></td>
+                    <td></td>
+                    <td>Project #3 Link: <a href="<%= profile.proj3 %>" target="_blank"><%= profile.proj3 %></a></td>
+                </tr>
+                <tr>10
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>11
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>12
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>13
+                    <td></td>
+                    <td>Project #4 Link: <a href="<%= profile.proj4 %>" target="_blank"><%= profile.proj4 %></a></td>
+                    <td></td>
+                </tr>
+                <tr>14
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>15
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+        </table>
         <a href="/profiles/<%= profile.id %>/edit">Edit Profile</a>
     </section>
     

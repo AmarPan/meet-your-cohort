@@ -12,6 +12,7 @@ const profileSchema = new mongoose.Schema({
     type: String,
     required: true
   },
+  nickname: String,
   email: String,
   phone: String,
   grpChat: Boolean,
