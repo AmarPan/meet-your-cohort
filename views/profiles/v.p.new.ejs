@@ -1,61 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/stylesheets/index.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Profile</title>
+  <link rel="stylesheet" href="/stylesheets/index.css">
 </head>
+
 <body>
   <nav>
     <img class="logo" src="/images/favicon.ico" alt="">
-    <a href="/profiles">ALL PROFILES   </a>
+    <a href="/profiles">ALL PROFILES </a>
     <a id="login" href="/auth/google">___Login with Google</a><br>
-</nav>
-<header>
+  </nav>
+  <header>
     <h1>Meet Your Classmates</h1>
-</header>
-    <form id="new-form" action="/profiles" method="POST" autocomplete="off">
-        <label>Name:</label>
-        <input type="text" name="name" placeholder="Richard Dickson"><br>
+  </header>
+  <form id="new-form" action="/profiles" method="POST" autocomplete="off">
+    <label>Name:</label>
+    <input type="text" name="name" placeholder="Richard Dickson"><br>
 
-        <img src="/images/fb16.png" alt="">
-        <input type="text" name="fb" placeholder="***Must start with http" ><br>
+    <label>Email:</label>
+    <input type="text" name="email" placeholder="user@gmail.com"><br>
 
-        <img src="/images/li16.png" alt="">
-        <input type="text" name="li" placeholder=" Ex. https://www.linkedin.com/in/user"><br>
+    <label>Phone #:</label>
+    <input type="text" name="phone" placeholder="Richard Dickson"><br>
 
-        <img src="/images/gh16.png" alt="">
-        <input type="text" name="gh" placeholder="Ex. https://github.com/user"><br>
+    <!-- // needs to be updated for checkbox -->
+    <label>Text Group Chat:</label>
+    <input type="text" name="grpChat"><br>
 
-        <label>Project #1 Link:</label>
-        <input type="text" name="proj1" placeholder="Ex. https://github.com/user/project1"><br>
+    <img src="/images/li16.png" alt="">
+    <input type="text" name="li" placeholder=" Ex. https://www.linkedin.com/in/user"><br>
 
-        <label>Project #2 Link:</label>
-        <input type="text" name="proj2" placeholder="Ex. https://github.com/user/project2"><br>
+    <img src="/images/fb16.png" alt="">
+    <input type="text" name="fb" placeholder="***Must start with http"><br>
 
-        <label>Birthplace:</label>
-        <input type="text" name="bplace" placeholder="Ex. Las Vegas, NV, USA"><br>
+    <img src="/images/gh16.png" alt="">
+    <input type="text" name="gh" placeholder="Ex. https://github.com/user"><br>
 
-        <label>Hometown:</label>
-        <input type="text" name="htown" placeholder="Ex. Pallet Town, OR"><br>
+    <label>Portfolio:</label>
+    <input type="text" name="port" placeholder="Ex. firstlast.com"><br>
 
-        <label>Current Place of Residence:</label>
-        <input type="text" name="currres" placeholder="Ex. Smallville, MI"><br>
+    <label>Project #1 Link:</label>
+    <input type="text" name="proj1" placeholder="Ex. https://github.com/user/project1"><br>
 
-        <label>Timezone:</label>
-        <select name="tz">
-          <option value="PST">PST</option>
-          <option value="EST">EST</option>
-          <option value="CT">CT</option>
-          <option value="MT">MT</option>
-        </select><br>
+    <label>Project #2 Link:</label>
+    <input type="text" name="proj2" placeholder="Ex. https://github.com/user/project2"><br>
 
-        <label>Age:</label>
-        <input type="text" name="age" placeholder="Ex. 30"><br>
-        
-         <input type="submit" value="Add Profile">
-      </form>
+    <label>Project #3 Link:</label>
+    <input type="text" name="proj3" placeholder="Ex. https://github.com/user/project3"><br>
+
+    <label>Project #4 Link:</label>
+    <input type="text" name="proj4" placeholder="Ex. https://github.com/user/project4"><br>
+
+    <label>Current Location:</label>
+    <input type="text" name="loc" placeholder="Smallville, KA"><br>
+
+    <label>Timezone:</label>
+    <select name="tZone">
+      <option value="PST">PST</option>
+      <option value="EST">EST</option>
+      <option value="CT">CT</option>
+      <option value="MT">MT</option>
+    </select><br>
+
+    <label>Birthplace:</label>
+    <input type="text" name="bPlace" placeholder="Ex. Las Vegas, NV, USA"><br>
+
+    <label>Ethnicity:</label>
+    <input type="text" name="eth" placeholder="Italian/Irish"><br>
+
+    <label>Age:</label>
+    <input type="text" name="age" placeholder="Ex. 30"><br>
+
+    <!-- // dont know how to put input data yet -->
+    <label>Birthday:</label>
+    <input type="text" name="bDay"><br>
+
+    <label>Education:</label>
+    <input type="text" name="ed" placeholder="Ex. B.A. in Architecture"><br>
+
+    <label>Previous Career:</label>
+    <input type="text" name="work" placeholder="Ex. Garbageman"><br>
+
+    <label>Likes:</label>
+    <input type="text" name="likes" placeholder="Ex. cats, roller coasters, snowboarding"><br>
+
+    <label>Dislikes:</label>
+    <input type="text" name="dislikes" placeholder="Ex. bugs, mornings, math"><br>
+    <input type="submit" value="Add Profile">
+  </form>
+
 </body>
+
 </html>

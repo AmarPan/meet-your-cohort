@@ -12,27 +12,40 @@ const profileSchema = new mongoose.Schema({
     type: String,
     required: true
   },
+  email: String,
+  phone: String,
+  grpChat: Boolean,
   fb: String,
   li: String,
   gh: String,
+  port: String,
   proj1: String,
   proj2: String,
-  htown: String,
-  bplace: String,
-  currres: String,
-  tz: ['PST','EST','CT','MT'],
-  bday: Date,
+  proj3: String,
+  proj4: String,
+
+  loc: String,
+  tZone: ['PST','EST','CT','MT'],
+  bPlace: String,
+  eth: String,
   age: Number,
+  bday: String,
+  ed: String,
+  work: String,
+  
+  likes: [String],
+  dislikes: [String],
   googleID: String
 }, {
   timestamps: true
 });
 
+// ceates a profiles (lowercase, plural) collection (bucket) in mongodb
 module.exports = mongoose.model('Profile', profileSchema)
 
 
 const profiles = [
-    {id: 125223, name: 'Amar Pan', proj1: "https://github.com/amarpan/simon-game", pic:"" },
+    {id: 125223, name: 'Amar Panjwani', proj1: "https://github.com/amarpan/simon-game", pic:"" },
     {id: 127904, name: 'Alondra Guzman', proj1: "github.com/amarpan/simon-game", pic:""},
     {id: 139608, name: 'Shawn Park', proj1: "https://github.com/amarpan/simon-game", pic:""}
 ]

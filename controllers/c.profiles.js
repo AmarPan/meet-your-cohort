@@ -1,11 +1,32 @@
 const Profile = require('../models/m.profile')
 
 Profile.create({
-    name: 'Jim McFly',
-    age: 32
+    name: 'Amar Pan',
+    email: 'amar.panjwani@gmail.com',
+    phone: '19512247077',
+    grpChat: 'yes',
+    li: 'https://www.linkedin.com/in/amarpan/',
+    fb: 'https://www.facebook.com/apanj001',
+    gh: 'https://github.com/amarpan',
+    port: 'https://amarpan.com',
+    proj1: 'https://github.com/amarpan/simon-game',
+    proj2: 'https://github.com/amarpan/meet-your-classmates',
+    proj3: '',
+    proj4: '',
+    loc: 'Apple Valley, CA',
+    tZone: 'PST',
+    bPlace: 'Alameda, CA, USA',
+    eth: 'Indian',
+    age: '32',
+    bDay: '06/19/89',
+    ed: 'M.A. Education, B.A. English, A.S. Comp Sci',
+    work: 'Teacher',
+    likes: 'dogs, roller coasters, tennis',
+    dislikes: 'mornings, math, macs'
 }, function (err, profileDoc) {
-    console.log(profileDoc);
-});
+        console.log(profileDoc);
+    });
+
 
 module.exports = {
     index,
@@ -16,6 +37,19 @@ module.exports = {
     edit,
     update,
 }
+
+function newProfile(req, res) {
+    res.render('profiles/v.p.new.ejs')
+}
+
+function create(req, res) {
+    console.log(req.body)
+    Profile.create(req.body)
+    res.redirect('/profiles')
+}
+
+// above functions have beenn reformatted
+// for Mongoose and MongoDB
 
 function update(req, res) {
     // The following will also do the job
@@ -42,14 +76,9 @@ function index(req, res) {
     })
 }
 
-function newProfile(req, res) {
-    res.render('profiles/v.p.new.ejs')
-}
 
-function create(req, res) {
-    Profile.create(req.body)
-    res.redirect('/profiles')
-}
+
+
 
 function deleteProfile(req, res) {
     Profile.deleteOne(req.params.id)
