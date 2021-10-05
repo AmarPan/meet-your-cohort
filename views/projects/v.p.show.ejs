@@ -27,9 +27,9 @@
             <tr>2
                 <td></td>
                 <td>
-                    <form action="/projects/<%= project._id %>/feedback" method="POST">
+                    <form id="feedback-form" action="/projects/<%= project._id %>/feedback" method="POST">
                         <label>Feedback / Comments / Suggestions:<br><br></label>
-                        <textarea name="content"></textarea><br>
+                        <textarea id="feedback-box" name="content" placeholder="I love the way you...I found a bug...Maybe you could add... "></textarea><br>
                         <!-- <label>Rating:</label>
                         <select name="rating">
                             <option value="1">1</option>
