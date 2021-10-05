@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 
-const commentSchema = new mongoose.Schema({
+const feedbackSchema = new mongoose.Schema({
     content: String }, {
     timestamps: true
     }
@@ -9,11 +9,11 @@ const commentSchema = new mongoose.Schema({
 
 const projectSchema = new mongoose.Schema({
     userSharing: { type: mongoose.Schema.Types.ObjectId, ref: 'User'},
-    projCreator: String,
-    projName: String,
-    projLink: String,
-    projReadMe: String,
-    projComments: [commentSchema]
+    author: String,
+    title: String,
+    link: String,
+    readMe: String,
+    feedback: [feedbackSchema]
 })
 
 

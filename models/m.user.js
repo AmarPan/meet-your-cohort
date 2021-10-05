@@ -14,7 +14,7 @@ const userSchema = new mongoose.Schema({
   googleId: String
 })
 
-// one profile has many reviews
+// one profile has many comments
 // const profileSchema = new mongoose.Schema({
 //   name: {
 //     type: String,

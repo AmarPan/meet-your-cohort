@@ -30,6 +30,9 @@ require('./config/passport');
 
 var indexRouter = require('./routes/r.index')
 var projectsRouter = require('./routes/r.projects') // routers are mounted
+var commentsRouter = require('./routes/r.feedbacks')
+// nested resources mount at '/' to give the router more flexibility 
+// /projects/:id/comments < comments is the nested resource
 
 
 // view engine setup
@@ -63,6 +66,7 @@ app.use(function (req, res, next) {
 // mount all routes with appropriate base paths
 app.use('/', indexRouter);
 app.use('/projects', projectsRouter)
+app.use('/', commentsRouter)
 
 
 // invalid request, send 404 page

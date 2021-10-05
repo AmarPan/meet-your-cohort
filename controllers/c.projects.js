@@ -16,7 +16,7 @@ function show(req, res){
         })
     })
 }
-// NEED TO FIX
+
 function index(req, res){
     Project.find({}, function(err, projectsDocuments){
         res.render('projects/v.p.index.ejs', {

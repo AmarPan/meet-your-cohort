@@ -24,7 +24,9 @@
             <li>
                
                <img id="indiv" src="/images/favicon.ico" alt=""><br>
-               <a href="/projects/<%= p.id %>"><%= p.projName %></a> <br>
+               <p><style>li p { color:red;}</style><%= p.title %> by <%= p.author %></p>
+               <a href="/projects/<%= p.id %>">FEEDBACK</a> <br>
+               
                <form class="delete-form" action="/profiles/<%= p.id %>?_method=DELETE" method="POST">
                 <button type="submit">X</button>
             </form>

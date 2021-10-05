@@ -1,22 +1,19 @@
 <%- include('../partials/header.ejs') %>
     <section>
         <form id="new-form" action="/projects/<%= project.id %>?_method=PUT" method="POST" autocomplete="off">
-            <label>Project Creator:</label>
-            <input type="text" name="projCreator" placeholder="Tyler Jones" value="<%= project.projCreator %> "><br>
+            <label>Author:</label>
+            <input type="text" name="author" placeholder="Tyler Jones" value="<%= project.projCreator %> "><br>
             
-            <label>Project Name:</label>
-            <input type="text" name="projName" placeholder="Connect 4 Game" value="<%= project.projName %> "><br>
+            <label>Title:</label>
+            <input type="text" name="title" placeholder="Connect 4 Game" value="<%= project.projName %> "><br>
 
-            <label>Project Link:</label>
-            <input type="text" name="projLink" placeholder="https://user.github.io/game/"
+            <label>Link:</label>
+            <input type="text" name="link" placeholder="https://user.github.io/game/"
                 value="<%= project.projLink %> "><br>
 
-            <label>ProjReadMe:</label>
-            <input type="text" name="projReadMe" placeholder="https://github.com/user/game"
+            <label>ReadMe:</label>
+            <input type="text" name="readMe" placeholder="https://github.com/user/game"
                 value="<%= project.projReadMe %> "><br>
-
-            <label>Phone #:</label>
-            <input type="text" name="phone" placeholder="Richard Dickson" value="<%= profile.phone %> "><br>
 
             <!-- // do we add projComments here? -->
 
