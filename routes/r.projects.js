@@ -1,13 +1,13 @@
 const router = require('express').Router();
-const Profile = require('../models/m.profile')
-const profilesCtrl = require('../controllers/c.profiles')
+const Project = require('../models/m.project')
+const projectsCtrl = require('../controllers/c.projects')
 
 const passport = require('passport');
 
-router.get('/', profilesCtrl.index);
-router.get('/new', profilesCtrl.new);
-router.get('/:id', profilesCtrl.show)
-router.post('/', profilesCtrl.create);
+router.get('/', projectsCtrl.index);
+router.get('/new', projectsCtrl.new);
+router.get('/:id', projectsCtrl.show)
+router.post('/', projectsCtrl.create);
 
 
 // above routes have been reformatted

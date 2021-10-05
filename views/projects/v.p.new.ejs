@@ -1,0 +1,35 @@
+<%- include('../partials/header.ejs') %>
+<section>
+  <form id="new-form" action="/projects" method="POST" autocomplete="off">
+    <label>Project Creator:</label>
+    <input type="text" name="projCreator" placeholder="Hank Gibson"><br>
+
+    <label>Project Name:</label>
+    <input type="text" name="projName" placeholder="Connect 4 Game"><br>
+
+    <label>Project Link:</label>
+    <input type="text" name="projLink" placeholder="https://user.github.io/game/"><br>
+
+    <label>ProjReadMe:</label>
+    <input type="text" name="projReadMe" placeholder="https://github.com/user/game"><br>
+
+    <!-- // do we add projComments here? -->
+
+    <!-- <label>Text Group Chat:</label>
+            <input type="checkbox" name="grpChat" value=""><br> -->
+
+    <!-- <label>Timezone:</label>
+            <select name="tZone" value="<
+                <option value="PST">PST</option>
+                <option value="EST">EST</option>
+                <option value="CT">CT</option>
+                <option value="MT">MT</option>
+            </select><br> -->
+    <input type="submit" value="Add Profile">
+  </form>
+
+</section>
+
+  </body>
+
+  </html>

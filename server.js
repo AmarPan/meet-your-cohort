@@ -29,7 +29,7 @@ require('./config/database');
 require('./config/passport');
 
 var indexRouter = require('./routes/r.index')
-var profilesRouter = require('./routes/r.profiles') // routers are mounted
+var projectsRouter = require('./routes/r.projects') // routers are mounted
 
 
 // view engine setup
@@ -62,7 +62,7 @@ app.use(function (req, res, next) {
 
 // mount all routes with appropriate base paths
 app.use('/', indexRouter);
-app.use('/profiles', profilesRouter)
+app.use('/projects', projectsRouter)
 
 
 // invalid request, send 404 page

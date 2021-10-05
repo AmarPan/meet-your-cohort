@@ -1,0 +1,40 @@
+<%- include('../partials/header.ejs') %>
+    <section>
+        <form id="new-form" action="/projects/<%= project.id %>?_method=PUT" method="POST" autocomplete="off">
+            <label>Project Creator:</label>
+            <input type="text" name="projCreator" placeholder="Tyler Jones" value="<%= project.projCreator %> "><br>
+            
+            <label>Project Name:</label>
+            <input type="text" name="projName" placeholder="Connect 4 Game" value="<%= project.projName %> "><br>
+
+            <label>Project Link:</label>
+            <input type="text" name="projLink" placeholder="https://user.github.io/game/"
+                value="<%= project.projLink %> "><br>
+
+            <label>ProjReadMe:</label>
+            <input type="text" name="projReadMe" placeholder="https://github.com/user/game"
+                value="<%= project.projReadMe %> "><br>
+
+            <label>Phone #:</label>
+            <input type="text" name="phone" placeholder="Richard Dickson" value="<%= profile.phone %> "><br>
+
+            <!-- // do we add projComments here? -->
+
+            <!-- <label>Text Group Chat:</label>
+            <input type="checkbox" name="grpChat" value="<%= profile.grpChat ? 'Yes' : 'No' %> "><br> -->
+
+            <!-- <label>Timezone:</label>
+            <select name="tZone" value="<%= profile.tZone %> ">
+                <option value="PST">PST</option>
+                <option value="EST">EST</option>
+                <option value="CT">CT</option>
+                <option value="MT">MT</option>
+            </select><br> -->
+            <input type="submit" value="Save Profile">
+        </form>
+
+    </section>
+
+    </body>
+
+    </html>
