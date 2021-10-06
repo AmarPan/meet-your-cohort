@@ -2,32 +2,32 @@
     <section>
         <form id="new-form" action="/projects/<%= project.id %>?_method=PUT" method="POST" autocomplete="off">
             <label>Author:</label>
-            <input type="text" name="author" placeholder="Tyler Jones" value="<%= project.projCreator %> "><br>
+            <input type="text" name="author" placeholder="Tyler Jones" value="<%= project.author %> "><br>
             
             <label>Title:</label>
-            <input type="text" name="title" placeholder="Connect 4 Game" value="<%= project.projName %> "><br>
+            <input type="text" name="title" placeholder="Connect 4 Game" value="<%= project.title %> "><br>
 
             <label>Link:</label>
             <input type="text" name="link" placeholder="https://user.github.io/game/"
-                value="<%= project.projLink %> "><br>
+                value="<%= project.link %> "><br>
 
             <label>ReadMe:</label>
             <input type="text" name="readMe" placeholder="https://github.com/user/game"
-                value="<%= project.projReadMe %> "><br>
+                value="<%= project.readMe %> "><br>
 
             <!-- // do we add projComments here? -->
 
             <!-- <label>Text Group Chat:</label>
-            <input type="checkbox" name="grpChat" value="<%= profile.grpChat ? 'Yes' : 'No' %> "><br> -->
+            <input type="checkbox" name="grpChat" value="
 
-            <!-- <label>Timezone:</label>
-            <select name="tZone" value="<%= profile.tZone %> ">
+            <label>Timezone:</label>
+            <select name="tZone" value="
                 <option value="PST">PST</option>
                 <option value="EST">EST</option>
                 <option value="CT">CT</option>
                 <option value="MT">MT</option>
             </select><br> -->
-            <input type="submit" value="Save Profile">
+            <input type="submit" value="Submit Edits">
         </form>
 
     </section>

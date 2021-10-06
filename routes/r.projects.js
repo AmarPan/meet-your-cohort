@@ -7,7 +7,10 @@ const passport = require('passport');
 router.get('/', projectsCtrl.index);
 router.get('/new', projectsCtrl.new);
 router.get('/:id', projectsCtrl.show)
+router.get('/:id/edit', projectsCtrl.edit)
 router.post('/', projectsCtrl.create);
+router.delete('/:id', projectsCtrl.delete)
+router.put('/:id', projectsCtrl.update)
 
 
 // above routes have been reformatted

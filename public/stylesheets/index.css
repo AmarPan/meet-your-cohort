@@ -52,14 +52,14 @@ body nav {
 
 body ul {
   margin: auto;
-  max-width: 960;
+  max-width: 960px;
 }
 
 body ul li {
   border: 5px solid #ff4500;
   background-color: white;
   margin: auto;
-  margin-bottom: 5px;
+  margin-bottom: 12px;
   max-width: 960px;
 }
 
@@ -183,7 +183,23 @@ footer {
 }
 
 #feedback-button {
-  border: 2px solid purple;
-  margin-top: 10px;
+  
+  background-color: #B8C0C2;
+  /* margin-top: 10px; */
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  /* border-radius: 4px; */
+  /* padding:1px; */
+  display:list-item;
+}
+
+#all-projects:nth-child(even){
+  border: 5px solid gray;
+}
+
+
+body ul:nth-child(even){
+  color: yellow;
 }
 

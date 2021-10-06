@@ -1,8 +1,5 @@
 const mongoose = require('mongoose');
 
-//const Schema = mongoose.Schema;
-
-// Create your User Model
 
 // need to have googleID on my userSchema
 
@@ -15,45 +12,7 @@ const userSchema = new mongoose.Schema({
 })
 
 // one profile has many comments
-// const profileSchema = new mongoose.Schema({
-//   name: {
-//     type: String,
-//     required: true
-//   },
-//   nickname: String,
-//   email: String,
-//   phone: String,
-//   grpChat: Boolean,
-//   fb: String,
-//   li: String,
-//   gh: String,
-//   port: String,
-//   proj1: String,
-//   proj1Reviews: [reviewSchema],
-//   proj2: String,
-//   proj2Reviews: [reviewSchema],
-//   proj3: String,
-//   proj3Reviews: [reviewSchema],
-//   proj4: String,
-//   proj4Reviews: [reviewSchema],
 
-//   loc: String,
-//   tZone: ['PST','EST','CT','MT'],
-//   bPlace: String,
-//   eth: String,
-//   age: Number,
-//   bday: String,
-//   ed: String,
-//   work: String,
-  
-//   likes: String,
-//   dislikes: String,
-//   googleID: String
-// }, {
-//   timestamps: true
-// });
-
-// ceates a profiles (lowercase, plural) collection (bucket) in mongodb
 module.exports = mongoose.model('User', userSchema)
 
 

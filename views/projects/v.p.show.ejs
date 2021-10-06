@@ -2,29 +2,35 @@
 
     <section>
         <h1><u>
-                <%= project.title %>
+                <%= project.title %><br><br>
             </u></h1>
         <table>
             <thead>
                 <tr>
-                    <th><u>AUTHOR</u></th>
                     <th><u>LINK</u></th>
+                    <th><u>AUTHOR</u></th>
                     <th><u>README</u></th>
-                </tr></u>
+                </tr>
             </thead>
-            <tr> 1
+            
+            <tr>
+                <td><a href="<%= project.link %>" target="_blank">
+                    <%= project.link %>
+                </a><br></td>
                 <td>
                     <%= project.author %>
                 </td>
-                <td><a href="<%= project.link %>" target="_blank">
-                        <%= project.link %>
-                    </a><br><br>
                 <td><a href="<%= project.readMe %>" target="_blank">
                         <%= project.readMe %>
                     </a>
                 </td>
             </tr>
-            <tr>2
+            <tr>
+                <td><br></td>
+                <td><br></td>
+                <td><br></td>
+            </tr>
+            <tr></tr>
                 <td></td>
                 <td>
                     <form id="feedback-form" action="/projects/<%= project._id %>/feedback" method="POST">
@@ -44,7 +50,7 @@
                 <td></td>
             </tr>
         </table>
-        <% if (project.feedback.length) { %>
+        <% if (project.feedbacks.length) { %>
         <table>
             <thead>
                 <tr>
@@ -53,7 +59,7 @@
                 </tr>
             </thead>
             <tbody>
-                <% project.feedback.forEach(function(r) { %>
+                <% project.feedbacks.forEach(function(r) { %>
                     <tr>
                         <td>
                             <%= r.createdAt.toLocaleDateString() %>

@@ -8,12 +8,13 @@ const feedbackSchema = new mongoose.Schema({
 )
 
 const projectSchema = new mongoose.Schema({
-    userSharing: { type: mongoose.Schema.Types.ObjectId, ref: 'User'},
+   
     author: String,
     title: String,
     link: String,
     readMe: String,
-    feedback: [feedbackSchema]
+    feedbacks: [feedbackSchema],
+    user: { type: mongoose.Schema.Types.ObjectId, ref: 'User'},
 })
 
 
