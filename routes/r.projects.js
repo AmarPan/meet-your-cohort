@@ -5,13 +5,19 @@ const projectsCtrl = require('../controllers/c.projects')
 const passport = require('passport');
 
 router.get('/', projectsCtrl.index);
-router.get('/new', projectsCtrl.new);
+router.get('/new', isLoggedIn, projectsCtrl.new);
 router.get('/:id', projectsCtrl.show)
-router.get('/:id/edit', projectsCtrl.edit)
-router.post('/', projectsCtrl.create);
-router.delete('/:id', projectsCtrl.delete)
-router.put('/:id', projectsCtrl.update)
+router.get('/:id/edit', isLoggedIn, projectsCtrl.edit)
 
+router.post('/', isLoggedIn, projectsCtrl.create);
+router.delete('/:id', isLoggedIn, projectsCtrl.delete)
+router.put('/:id', isLoggedIn, projectsCtrl.update)
+
+
+function isLoggedIn(req, res, next) {
+    if(req.isAuthenticated()) return next();
+    res.redirect('/auth/google');
+}
 
 // above routes have been reformatted
 // for Mongoose and MongoDB
