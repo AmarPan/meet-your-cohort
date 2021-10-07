@@ -13,7 +13,13 @@
         <nav>
             <img class="logo" src="/images/favicon.ico" alt="">
             <a href="/projects">ALL PROJECTS   </a>
-            <a id="login" href="/auth/google">___Login with Google</a><br>
+            <% if (user) { %>
+                <a href="/logout">Log Out</a>
+                <span>Hi <%= user.name %> </span>
+              <% } else { %>
+                <a href="/auth/google"> Login with Google</a>
+              <% } %>
+            <!-- <a id="login" href="/auth/google">___Login with Google</a><br> -->
         </nav>
         <h1>Rate My Project</h1>
     </header>

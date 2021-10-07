@@ -35,7 +35,7 @@ router.get('/oauth2callback', passport.authenticate(
 // OAuth logout route
 router.get('/logout', function(req, res){
   req.logout();
-  res.redirect('/'); // maybe u want to redirect somewhere else
+  res.redirect('/projects'); // maybe u want to redirect somewhere else
 });
 
 module.exports = router;
