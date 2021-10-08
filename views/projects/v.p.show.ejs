@@ -75,9 +75,12 @@
         <% } else { %>
             <h5>No Feedback Yet</h5>
         <% } %>
-        <% if (project.user.equals(user._id)) { %>
-            <a href="/projects/<%= project.id %>/edit">Edit Project</a>
+        <% if (user) { %>
+            <% if (project.user.equals(user._id)) { %>
+                <a href="/projects/<%= project.id %>/edit">Edit Project</a>
+            <% } %>
         <% } %>
+       
             
     </section>
 
