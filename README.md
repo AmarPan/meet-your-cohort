@@ -8,6 +8,7 @@ Review My Project is a hub where software engineering students can post their cu
 
 
 ## Screenshots
+![All Projects](/public/images/RMPIndex.jpg)
 
 
 #### Setup your login
