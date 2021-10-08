@@ -14,7 +14,8 @@ const projectSchema = new mongoose.Schema({
     link: String,
     readMe: String,
     feedbacks: [feedbackSchema],
-    user: { type: mongoose.Schema.Types.ObjectId, ref: 'User'},
+    test: String,
+    user: { type: mongoose.Schema.Types.ObjectId, ref: 'User'}
 })
 
 

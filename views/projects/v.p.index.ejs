@@ -25,6 +25,8 @@
                 
                 <img id="indiv" src="/images/favicon.ico" alt=""><br>
                 <% if (user) { %>
+                    <% console.log(p,"<--p")
+                       console.log(user,"<--user")  %> 
                     <% if (p.user.equals(user._id)) { %>
                         <form class="delete-form" action="/projects/<%= p.id %>?_method=DELETE" method="POST">
                             <button type="submit">X</button>
