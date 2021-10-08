@@ -13,7 +13,7 @@ Review My Project is a simple hub where software engineering students can share 
 
 
 ## Technologies Used
-Node.js, Express, MongoDB, Mongoose, Heroku, Javascript, HTML, CSS, Lots of Red Bull
+Node.js, Express, MongoDB, Mongoose, Heroku, Javascript, HTML, CSS, and Lots of Red Bull
 
 ## Getting Started
 1. Click "Add New Project"
@@ -24,6 +24,6 @@ Trello Board: https://trello.com/b/BzSJZUKx/review-my-project
 
 ## Next Steps
 + Add edit and delete functionality for comments
-+ Allow users to upload a project screenshot that displays on the hub card
++ Allow users to upload a project screenshot that displays on their hub card
 + Email users when they get feedback on one of their projects
 
