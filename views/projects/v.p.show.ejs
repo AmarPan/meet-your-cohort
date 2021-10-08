@@ -54,6 +54,7 @@
         <table>
             <thead>
                 <tr>
+                    <th>Name</th>
                     <th>Date</th>
                     <th>Feedback</th>
                 </tr>
@@ -61,6 +62,9 @@
             <tbody>
                 <% project.feedbacks.forEach(function(r) { %>
                     <tr>
+                        <td>
+                            <%= r.userName %> 
+                        </td>
                         <td>
                             <%= r.createdAt.toLocaleDateString() %>
                         </td>

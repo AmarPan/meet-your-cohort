@@ -22,6 +22,7 @@
     <ul id="all-projects">
         <% projects.forEach(p=> { %>
             <li id="card">
+                <% console.log(p, "<----p") %> 
                 
                 <img id="indiv" src="/images/favicon.ico" alt=""><br>
                 <% if (user) { %>
@@ -41,7 +42,7 @@
                                 color: red;
                             }
                         </style>
-                        <%= p.title %> <br> <%= p.author %>
+                        <%= p.username %> <br> <%= p.author %>
 
                     </p>
                     

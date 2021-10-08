@@ -121,6 +121,7 @@ function create(req, res) {
         }
         console.log(createdProject, "<---FIRST")
         createdProject.user = req.user._id
+        createdProject.userName = req.user.name
         console.log(createdProject, "<---SECOND")
 
         createdProject.save(function(err){

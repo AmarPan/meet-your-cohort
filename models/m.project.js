@@ -2,9 +2,12 @@ const mongoose = require('mongoose');
 
 
 const feedbackSchema = new mongoose.Schema({
-    content: String }, {
-    timestamps: true
-    }
+    content: String, 
+    userId: { type: mongoose.Schema.Types.ObjectId, ref: 'User'},
+    userName: String
+    }, {
+        timestamps: true
+    },
 )
 
 const projectSchema = new mongoose.Schema({
