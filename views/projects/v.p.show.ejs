@@ -7,23 +7,38 @@
         <table>
             <thead>
                 <tr>
-                    <th><u>LINK</u></th>
-                    <th><u>AUTHOR</u></th>
-                    <th><u>README</u></th>
+                    <th><u></u></th>
+                    <th><u></u></th>
+                    <th><u></u></th>
                 </tr>
             </thead>
             
             <tr>
-                <td><a href="<%= project.link %>" target="_blank">
-                    <%= project.link %>
-                </a><br></td>
+                <td></td>
                 <td>
-                    <%= project.userName %>
+                    Creator: <%= project.userName %>
                 </td>
                 <td><a href="<%= project.readMe %>" target="_blank">
                         <%= project.readMe %>
                     </a>
                 </td>
+            </tr>
+            <tr>
+                <td><br></td>
+                <td><a href="<%= project.link %>" target="_blank">
+                    <%= project.link %>
+                </a><br></td>
+                <td><br></td>
+            </tr>
+            <tr>
+                <td><br></td>
+                <td><br></td>
+                <td><br></td>
+            </tr>
+            <tr>
+                <td><br></td>
+                <td><br></td>
+                <td><br></td>
             </tr>
             <tr>
                 <td><br></td>
@@ -76,6 +91,7 @@
                     <% }) %>
             </tbody>
         </table>
+       
         <% } else { %>
             <h5>No Feedback Yet</h5>
         <% } %>

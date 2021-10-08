@@ -11,13 +11,12 @@ const feedbackSchema = new mongoose.Schema({
 )
 
 const projectSchema = new mongoose.Schema({
-   
-    author: String,
     title: String,
     link: String,
     readMe: String,
+    descript: String,
+    feedbackType: String,
     feedbacks: [feedbackSchema],
-    test: String,
     userName: String,
     user: { type: mongoose.Schema.Types.ObjectId, ref: 'User'}
 })

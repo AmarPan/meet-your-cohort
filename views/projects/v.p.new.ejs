@@ -1,17 +1,21 @@
 <%- include('../partials/header.ejs') %>
 <section>
   <form id="new-form" action="/projects" method="POST" autocomplete="off">
-    <label>Author:</label>
-    <input type="text" name="author" placeholder="Hank Gibson"><br>
 
-    <label>Title:</label>
-    <input type="text" name="title" placeholder="Connect 4 Game"><br>
+    <label>Project Title:</label><br>
+    <input type="text" name="title" placeholder="Connect 4 Game"><br><br>
 
-    <label>Link:</label>
-    <input type="text" name="link" placeholder="https://user.github.io/game/"><br>
+    <label>Deployed Project Link (must start with http://www.):</label><br>
+    <input type="text" name="link" placeholder="https://project.herokuapp.com"><br><br>
 
-    <label>ReadMe:</label>
-    <input type="text" name="readMe" placeholder="https://github.com/user/game"><br>
+    <label>README Link (must start with http://www.):</label><br>
+    <input type="text" name="readMe" placeholder="https://github.com/user/game"><br><br>
+
+    <label>Short Description of Your Project:</label><br>
+    <input type="text" name="descript" placeholder="An app to help users use..."><br><br>
+
+    <label>What specifically would you like feedback on?:</label><br>
+    <input type="text" name="feedbackType" placeholder="specific feature, CSS, UX, everything"><br><br>
 
     <!-- // do we add projComments here? -->
 
