@@ -12,7 +12,7 @@ passport.use(new GoogleStrategy({
   function (accessToken, refreshToken, profile, cb) {
     // a user has logged in via OAuth!
     // refer to the lesson plan from earlier today in order to set this up
-    console.log(profile, "<----- Profile"); // <--- Is going to be the users that just logged information from google
+    // console.log(profile, "<----- Profile"); // <--- Is going to be the users that just logged information from google
     // do we put googleId in single quotes or not?
     User.findOne({ googleId: profile.id }, function (err, userDoc) {
       if (err) return cb(err);

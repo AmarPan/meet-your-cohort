@@ -4,7 +4,8 @@ const projectsCtrl = require('../controllers/c.projects')
 
 const passport = require('passport');
 
-router.get('/', projectsCtrl.index);
+router.get('/all', projectsCtrl.allProjects);
+router.get('/', isLoggedIn, projectsCtrl.index);
 router.get('/new', isLoggedIn, projectsCtrl.new);
 router.get('/:id', projectsCtrl.show)
 router.get('/:id/edit', isLoggedIn, projectsCtrl.edit)

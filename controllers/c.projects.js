@@ -10,10 +10,12 @@ module.exports = {
     delete: deleteProject,
     deleteOne,
     edit,
-    update
+    update,
+    allProjects
 }
 
 function edit(req,res){
+    console.log(req.params, "<--req.params")
     Project.findById(req.params.id, function(err, foundProject){
         console.log(foundProject);
         if (!foundProject.user.equals(req.user._id)) return res.redirect('/projects');
@@ -83,13 +85,27 @@ function show(req, res){
     })
 }
 
-function index(req, res){
+function allProjects(req, res){
+    console.log(req.body, "<--req.body")
     Project.find({}, function(err, projectsDocuments){
+        res.render('projects/v.p.allProjects.ejs', {
+            projects: projectsDocuments
+        })
+    })
+}
+
+function index(req, res){
+    console.log(req.user,"<--req.user")
+    console.log(req.body.user,"<--req.body.user")
+    console.log(req.params,"<--req.params")
+    Project.find({user: req.user._id}, function(err, projectsDocuments){
         res.render('projects/v.p.index.ejs', {
             projects: projectsDocuments
         })
     })
 }
+
+// 
 
 function newProject(req, res) {
     res.render('projects/v.p.new.ejs')
