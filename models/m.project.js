@@ -18,6 +18,7 @@ const projectSchema = new mongoose.Schema({
     readMe: String,
     feedbacks: [feedbackSchema],
     test: String,
+    userName: String,
     user: { type: mongoose.Schema.Types.ObjectId, ref: 'User'}
 })
 

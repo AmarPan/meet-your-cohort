@@ -36,13 +36,7 @@
                 
                
                     <p id="full-title">
-                        <style>
-                            li p {
-                                color: red;
-                            }
-                        </style>
-                        <%= p.title %> <br> <%= p.author %>
-
+                        Title:<%= p.title %> <br> Creator:<%= p.userName %>
                     </p>
                     
                     <a id="feedback-button" href="/projects/<%= p.id %>">DETAILS</a>

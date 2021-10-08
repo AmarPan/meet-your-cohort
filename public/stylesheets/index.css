@@ -227,6 +227,10 @@ footer {
  display: inline-block;
 }
 
+#full-title {
+  color:red;
+}
+
 
 body ul:nth-child(even){
   color: yellow;
