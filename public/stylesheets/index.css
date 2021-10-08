@@ -52,6 +52,11 @@ body nav {
   height: 50px;
 }
 
+body nav:hover {
+  color: white;
+}
+
+
 #lasttwo {
   align-items: flex-end;
 }
@@ -97,6 +102,10 @@ header{
   text-decoration: none;
   color:black;
   font-size: x-large;
+}
+
+.header:hover {
+  color: white;
 }
 
 header > h1 {
