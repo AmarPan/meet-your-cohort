@@ -9,7 +9,4 @@ function isLoggedIn(req, res, next) {
     res.redirect('/auth/google');
 }
 
-
-
-
 module.exports = router;

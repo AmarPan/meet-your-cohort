@@ -1,16 +1,14 @@
 * {
-  /* color: red; */
+  
   box-sizing: border-box;
   margin: 0;
   padding:0;
   text-align: center;
-  /* border: 5px solid purple; */
+  
 }
 
 html {
   background-color: black;
-  /* height: 80vh;
-  width: 100vw; */
   background-image: url("../images/gears.jpg")
   
 }
@@ -24,7 +22,6 @@ body {
 
 li {
   list-style: none;
-  border: 5px solid green;
 }
 
 li img {
@@ -39,7 +36,6 @@ body {
   grid-template-columns: 1fr;
   color: #ff4500;
   background-color: oldlace;
-  /* height: 90vh; */
   padding-bottom: 0%;
   max-width: 960px;
   width: 100%;
@@ -56,11 +52,6 @@ body nav:hover {
   color: white;
 }
 
-
-#lasttwo {
-  align-items: flex-end;
-}
-
 body ul {
   margin: auto;
   max-width: 960px;
@@ -74,16 +65,6 @@ body ul li {
   max-width: 960px;
 }
 
-/* nav img {
-  padding-top: 0;
-  margin-top: 0;
-  margin-bottom: 10px;
-  margin-left: 5px;
-  object-fit: contain;
-  margin-right: auto;
-  height: 46px;
-} */
-
 section p {
   display: inline;
 }
@@ -92,7 +73,6 @@ header{
   margin: auto;
   padding: auto;
   background-color: #ff4500;
-  /* border: 5px solid purple;  */
   max-width: 960px;
   width: 100%;
   color: black;
@@ -109,13 +89,6 @@ header{
 }
 
 header > h1 {
-  /* display: inline-flex; */
-  
-  /* display: inline; */
-  /* border: 5px solid purple;  */
-  /* margin-top: 7px;
-  margin-left: 400px; */
-  /* max-width: 960px; */
   margin: auto;
   width: 100%;
   
@@ -125,10 +98,6 @@ section table {
   margin: auto;
   justify-content: center;
 }
-
-/* header img {
-  margin: 0;
-} */
 
 body li {
   border: 5px solid white;
@@ -155,7 +124,6 @@ footer {
   overflow:0;
 }
   
-
 .brand-logo {
   margin-left: 15px;
 }
@@ -205,12 +173,9 @@ footer {
 #feedback-button {
   
   background-color: #B8C0C2;
-  /* margin-top: 10px; */
   margin: 0;
   padding: 0;
   text-decoration: none;
-  /* border-radius: 4px; */
-  /* padding:1px; */
   display:list-item;
 }
 
@@ -229,6 +194,16 @@ footer {
 
 #full-title {
   color:red;
+}
+
+#black-border {
+  border: 5px solid black;
+  padding: 2px;
+  background-color: red;
+}
+
+#black-border:hover {
+  color: red;
 }
 
 .black {
