@@ -67,7 +67,7 @@ function deleteProject(req, res){
     Project.deleteOne({_id: req.params.id}, function(err, deletedProject){
         if (err) { console.log(err, '<--- error')}
         console.log(deletedProject);
-        res.redirect('/projects');
+        res.redirect('/projects/all');
     });
 }
 

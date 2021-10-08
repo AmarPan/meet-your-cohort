@@ -13,37 +13,35 @@
             
             <tr>
                 <td></td>
-                <td>Designer: <%= project.userName %></td>
+                <td>Designer: <span class="black"><%= project.userName %></span> </td>
                 <td>
                 </td>
             </tr>
             <tr>
                 <td><br></td>
-                <td>Project Title: <%= project.title %></td>
+                <td>Project Title: <span class="black"><%= project.title %></span> </td>
                 <td><br></td>
             </tr>
             <tr>
                 <td><br></td>
-                <td>Deployed Project Link: <a href="<%= project.link %>" target="_blank">
-                    <%= project.link %>
-                </a><br></td>
+                <td>Deployed Project Link: <span class="black"><a href="<%= project.link %>" target="_blank">
+                    <%= project.link %></a><br></span> </td>
                 <td><br></td>
             </tr>
             <tr>
                 <td><br></td>
-                <td>Project README: <a href="<%= project.readMe %>" target="_blank">
-                    <%= project.readMe %>
-                </a></td>
+                <td>Project README: <span class="black"><a href="<%= project.readMe %>" target="_blank">
+                    <%= project.readMe %></a></span> </td>
                 <td><br></td>
             </tr>
             <tr>
                 <td><br></td>
-                <td>Description: <%= project.descript %>  </td>
+                <td>Description: <span class="black"><%= project.descript %></span>   </td>
                 <td><br></td>
             </tr>
             <tr>
                 <td><br></td>
-                <td>What I'm Looking for Feedback On: <%= project.feedbackType %> </td>
+                <td>What I'm Looking for Feedback On: <span class="black"><%= project.feedbackType %></span>  </td>
                 <td><br></td>
             </tr>
             <tr></tr>
@@ -55,7 +53,7 @@
                 <% } %>
                 <td>
                     <form id="feedback-form" action="/projects/<%= project._id %>/feedback" method="POST">
-                        <label>Feedback / Comments / Suggestions:<br><br></label>
+                        <label><ul>Feedback / Comments / Suggestions:</ul></label>
                         <textarea id="feedback-box" name="content" placeholder="I love the way you...I found a bug...Maybe you could add... "></textarea><br>
                         <!-- <label>Rating:</label>
                         <select name="rating">
@@ -94,8 +92,8 @@
                         </td>
                     </tr> -->
 
-                    <%= r.userName %> <%= r.createdAt.toLocaleDateString() %>  <%= r.content %>
-
+                    <%= r.userName %> <%= r.createdAt.toLocaleDateString() %> <span class="black"><%= r.content %>
+                    </span> 
                     <% }) %>
             </tbody>
         </table>
