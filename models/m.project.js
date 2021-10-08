@@ -2,12 +2,12 @@ const mongoose = require('mongoose');
 
 
 const feedbackSchema = new mongoose.Schema({
-    content: String, 
-    userId: { type: mongoose.Schema.Types.ObjectId, ref: 'User'},
+    content: String,
+    userId: { type: mongoose.Schema.Types.ObjectId, ref: 'User' },
     userName: String
-    }, {
-        timestamps: true
-    },
+}, {
+    timestamps: true
+}
 )
 
 const projectSchema = new mongoose.Schema({
@@ -18,8 +18,8 @@ const projectSchema = new mongoose.Schema({
     feedbackType: String,
     feedbacks: [feedbackSchema],
     userName: String,
-    user: { type: mongoose.Schema.Types.ObjectId, ref: 'User'}
+    user: { type: mongoose.Schema.Types.ObjectId, ref: 'User' }
 })
 
 
-  module.exports = mongoose.model('Project', projectSchema)
+module.exports = mongoose.model('Project', projectSchema)
