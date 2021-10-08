@@ -1,38 +1,26 @@
 <%- include('../partials/header.ejs') %>
-<section>
-  <form id="new-form" action="/projects" method="POST" autocomplete="off">
+  <section>
+    <form id="new-form" action="/projects" method="POST" autocomplete="off">
 
-    <label>Project Title:</label><br>
-    <input type="text" name="title" placeholder="Connect 4 Game"><br><br>
+      <label>Project Title:</label><br>
+      <input type="text" name="title" placeholder="Connect 4 Game"><br><br>
 
-    <label>Deployed Project Link (must start with http://www.):</label><br>
-    <input type="text" name="link" placeholder="https://project.herokuapp.com"><br><br>
+      <label>Deployed Project Link (must start with https://www.):</label><br>
+      <input type="text" name="link" placeholder="https://project.herokuapp.com"><br><br>
 
-    <label>README Link (must start with http://www.):</label><br>
-    <input type="text" name="readMe" placeholder="https://github.com/user/game"><br><br>
+      <label>README Link (must start with https://www.):</label><br>
+      <input type="text" name="readMe" placeholder="https://github.com/user/game"><br><br>
 
-    <label>Short Description of Your Project:</label><br>
-    <input type="text" name="descript" placeholder="An app to help users use..."><br><br>
+      <label>Short Description of Your Project:</label><br>
+      <input type="text" name="descript" placeholder="An app to help users use..."><br><br>
 
-    <label>What specifically would you like feedback on?:</label><br>
-    <input type="text" name="feedbackType" placeholder="specific feature, CSS, UX, everything"><br><br>
+      <label>What specifically would you like feedback on?:</label><br>
+      <input type="text" name="feedbackType" placeholder="specific feature, CSS, UX, everything"><br><br>
 
-    <!-- // do we add projComments here? -->
+      <input type="submit" value="Submit Project">
+    </form>
 
-    <!-- <label>Text Group Chat:</label>
-            <input type="checkbox" name="grpChat" value=""><br> -->
-
-    <!-- <label>Timezone:</label>
-            <select name="tZone" value="<
-                <option value="PST">PST</option>
-                <option value="EST">EST</option>
-                <option value="CT">CT</option>
-                <option value="MT">MT</option>
-            </select><br> -->
-    <input type="submit" value="Submit Project">
-  </form>
-
-</section>
+  </section>
 
   </body>
 

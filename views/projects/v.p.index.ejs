@@ -1,28 +1,9 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/stylesheets/index.css">
-</head>
-<body>
-    
-    <header>
-        <nav>
-            <img class="logo" src="/images/favicon.ico" alt="">
-            <a href="/profiles">ALL PROFILES   </a>
-            <a id="login" href="/auth/google">___Login with Google</a><br>
-        </nav>
-        <h1>Meet Your Classmates</h1>
-    </header> -->
-    <%- include('../partials/header.ejs') %>
-    <a href="/projects/new">Add new project</a>
+<%- include('../partials/header.ejs') %>
+    <a href="/projects/new">Add New Project</a>
     <ul id="all-projects">
         <% projects.forEach(p=> { %>
             <li id="card">
-                
+
                 <img id="indiv" src="/images/favicon.ico" alt=""><br>
                 <% if (user) { %>
                     <% if (p.user.equals(user._id)) { %>
@@ -30,18 +11,21 @@
                             <button type="submit">X</button>
                         </form>
                         <% } else {%>
-                         <br>
-                         <% } %>
-                <% } %>
-                
-               
-                <p id="full-title">
-                    Project Title: <span class="black"><%= p.title %></span> <br>
-                    Designer: <span class="black"><%= p.userName %></span>
-                </p>
-                    
-                    <a id="feedback-button" href="/projects/<%= p.id %>">DETAILS</a>
-        
+                            <br>
+                            <% } %>
+                                <% } %>
+
+                                    <p id="full-title">
+                                        Project Title: <span class="black">
+                                            <%= p.title %>
+                                        </span> <br>
+                                        Designer: <span class="black">
+                                            <%= p.userName %>
+                                        </span>
+                                    </p>
+
+                                    <a id="feedback-button" href="/projects/<%= p.id %>">DETAILS</a>
+
 
 
 

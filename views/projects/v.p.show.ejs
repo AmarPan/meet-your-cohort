@@ -1,109 +1,92 @@
 <%- include('../partials/header.ejs') %>
 
     <section>
-                
         <table>
             <thead>
                 <tr>
-                    <th><u></u></th>
-                    <th><u></u></th>
-                    <th><u></u></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
                 </tr>
             </thead>
-            
+
             <tr>
                 <td></td>
-                <td>Designer: <span class="black"><%= project.userName %></span> </td>
+                <td>Designer: <span class="black">
+                        <%= project.userName %>
+                    </span> </td>
                 <td>
                 </td>
             </tr>
             <tr>
                 <td><br></td>
-                <td>Project Title: <span class="black"><%= project.title %></span> </td>
+                <td>Project Title: <span class="black">
+                        <%= project.title %>
+                    </span> </td>
                 <td><br></td>
             </tr>
             <tr>
                 <td><br></td>
                 <td>Deployed Project Link: <span class="black"><a href="<%= project.link %>" target="_blank">
-                    <%= project.link %></a><br></span> </td>
+                            <%= project.link %>
+                        </a><br></span> </td>
                 <td><br></td>
             </tr>
             <tr>
                 <td><br></td>
                 <td>Project README: <span class="black"><a href="<%= project.readMe %>" target="_blank">
-                    <%= project.readMe %></a></span> </td>
+                            <%= project.readMe %>
+                        </a></span> </td>
                 <td><br></td>
             </tr>
             <tr>
                 <td><br></td>
-                <td>Description: <span class="black"><%= project.descript %></span>   </td>
+                <td>Description: <span class="black">
+                        <%= project.descript %>
+                    </span> </td>
                 <td><br></td>
             </tr>
             <tr>
                 <td><br></td>
-                <td>What I'm Looking for Feedback On: <span class="black"><%= project.feedbackType %></span>  </td>
+                <td>What I'm Looking for Feedback On: <span class="black">
+                        <%= project.feedbackType %>
+                    </span> </td>
                 <td><br></td>
             </tr>
             <tr></tr>
-                <td></td>
-                <% if (user) { %>
-                    <% if (project.user.equals(user._id)) { %>
-                        <br><a href="/projects/<%= project.id %>/edit">Edit Project</a>
+            <td></td>
+
+            <% if (user) { %>
+                <% if (project.user.equals(user._id)) { %>
+                    <br><a href="/projects/<%= project.id %>/edit">Edit Project</a>
                     <% } %>
-                <% } %>
-                <td>
-                    <form id="feedback-form" action="/projects/<%= project._id %>/feedback" method="POST">
-                        <label><ul>Feedback / Comments / Suggestions:</ul></label>
-                        <textarea id="feedback-box" name="content" placeholder="I love the way you...I found a bug...Maybe you could add... "></textarea><br>
-                        <!-- <label>Rating:</label>
-                        <select name="rating">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5"selected>5</option>
-                        </select> -->
-                        <input type="submit" value="Submit Feedback">
-                    </form>
-                </td>
-                <td></td>
-            </tr>
+                        <% } %>
+                            <td>
+                                <form id="feedback-form" action="/projects/<%= project._id %>/feedback" method="POST">
+                                    <label>
+                                        <ul>Feedback / Comments / Suggestions:</ul>
+                                    </label>
+                                    <textarea id="feedback-box" name="content"
+                                        placeholder="I love the way you...I found a bug...Maybe you could add... "></textarea><br>
+                                    <input type="submit" value="Submit Feedback">
+                                </form>
+                            </td>
+                            <td></td>
+                            </tr>
         </table>
         <% if (project.feedbacks.length) { %>
-        <!-- <table>
-            <thead>
-                <tr>
-                    <th class=>Name</th>
-                    <th>Date</th>
-                    <th>Feedback</th>
-                </tr>
-            </thead>
-            <tbody>
-                <% project.feedbacks.forEach(function(r) { %>
-                    <tr>
-                        <td class="comment">
-                            <%= r.userName %> 
-                        </td>
-                        <td class="comment">
-                            <%= r.createdAt.toLocaleDateString() %>
-                        </td>
-                        <td class="comment">
-                            <%= r.content %>
-                        </td>
-                    </tr> -->
+            <% project.feedbacks.forEach(function(r) { %>
 
-                    <%= r.userName %> <%= r.createdAt.toLocaleDateString() %> <span class="black"><%= r.content %>
-                    </span> 
-                    <% }) %>
-            </tbody>
-        </table>
-       
-        <% } else { %>
-            <h5>No Feedback Yet</h5>
-        <% } %>
-       
-       
-            
+                <%= r.userName %>
+                    <%= r.createdAt.toLocaleDateString() %> <span class="black">
+                            <%= r.content %><br>
+                        </span>
+                        <% }) %>
+
+                            <% } else { %>
+                                <h5>No Feedback Yet</h5>
+                                <% } %>
+
     </section>
 
 

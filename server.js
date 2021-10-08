@@ -1,6 +1,6 @@
 /*
     Name: Amar Panjwani
-    Title: Meet Your Classmates (SEI Project 2)
+    Title: Review My Project (GA SEI Project 2)
     Email: amar.panjwani@gmail.com
     Date: 10/1/21
 */
@@ -11,31 +11,24 @@ var express = require('express');
 var path = require('path');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
-// session middleware
+
 var session = require('express-session');
 var passport = require('passport');
 var methodOverride = require('method-override');
 
-// load the env vars
+
 require('dotenv').config();
 
-// create the Express app
 var app = express();
 
-// connect to the MongoDB with mongoose
 require('./config/database');
 
-// configure Passport
 require('./config/passport');
 
 var indexRouter = require('./routes/r.index')
-var projectsRouter = require('./routes/r.projects') // routers are mounted
+var projectsRouter = require('./routes/r.projects') 
 var feedbacksRouter = require('./routes/r.feedbacks')
-// nested resources mount at '/' to give the router more flexibility 
-// /projects/:id/comments < comments is the nested resource
 
-
-// view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
@@ -45,7 +38,7 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
-// mount the session middleware
+
 app.use(session({
   secret: 'SEI Rocks!',
   resave: false,
@@ -56,20 +49,17 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 
-// Add this middleware BELOW passport middleware
+
 app.use(function (req, res, next) {
-  res.locals.user = req.user; // assinging a property to res.locals, makes that said property (user) availiable in every
-  // single ejs view
+  res.locals.user = req.user; 
   next();
 });
 
-// mount all routes with appropriate base paths
 app.use('/', indexRouter);
 app.use('/projects', projectsRouter)
 app.use('/', feedbacksRouter)
 
 
-// invalid request, send 404 page
 app.use(function(req, res) {
   res.status(404).send('Cant find that!');
 });
