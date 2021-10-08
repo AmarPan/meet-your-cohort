@@ -20,7 +20,7 @@ Node.js, Express, MongoDB, Mongoose, Heroku, Javascript, HTML, CSS, Lots of Red 
 2. Fill the form with information about your project, what kind of feedback you are seeking, and links to your deployed app and README
 3. Hit Submit, and provide feedback on others' projects while you wait to get some on yours!
 
-Trello Board: https://trello.com/b/BzSJZUKx/rate-my-project
+Trello Board: https://trello.com/b/BzSJZUKx/review-my-project
 
 ## Next Steps
 + Add edit and delete functionality for comments
