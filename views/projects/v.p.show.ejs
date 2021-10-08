@@ -1,9 +1,7 @@
 <%- include('../partials/header.ejs') %>
 
     <section>
-        <h1><u>
-                <%= project.title %><br><br>
-            </u></h1>
+                
         <table>
             <thead>
                 <tr>
@@ -15,38 +13,46 @@
             
             <tr>
                 <td></td>
+                <td>Designer: <%= project.userName %></td>
                 <td>
-                    Creator: <%= project.userName %>
-                </td>
-                <td><a href="<%= project.readMe %>" target="_blank">
-                        <%= project.readMe %>
-                    </a>
                 </td>
             </tr>
             <tr>
                 <td><br></td>
-                <td><a href="<%= project.link %>" target="_blank">
+                <td>Project Title: <%= project.title %></td>
+                <td><br></td>
+            </tr>
+            <tr>
+                <td><br></td>
+                <td>Deployed Project Link: <a href="<%= project.link %>" target="_blank">
                     <%= project.link %>
                 </a><br></td>
                 <td><br></td>
             </tr>
             <tr>
                 <td><br></td>
-                <td><br></td>
-                <td><br></td>
-            </tr>
-            <tr>
-                <td><br></td>
-                <td><br></td>
+                <td>Project README: <a href="<%= project.readMe %>" target="_blank">
+                    <%= project.readMe %>
+                </a></td>
                 <td><br></td>
             </tr>
             <tr>
                 <td><br></td>
+                <td>Description: <%= project.descript %>  </td>
                 <td><br></td>
+            </tr>
+            <tr>
+                <td><br></td>
+                <td>What I'm Looking for Feedback On: <%= project.feedbackType %> </td>
                 <td><br></td>
             </tr>
             <tr></tr>
                 <td></td>
+                <% if (user) { %>
+                    <% if (project.user.equals(user._id)) { %>
+                        <br><a href="/projects/<%= project.id %>/edit">Edit Project</a>
+                    <% } %>
+                <% } %>
                 <td>
                     <form id="feedback-form" action="/projects/<%= project._id %>/feedback" method="POST">
                         <label>Feedback / Comments / Suggestions:<br><br></label>
@@ -66,10 +72,10 @@
             </tr>
         </table>
         <% if (project.feedbacks.length) { %>
-        <table>
+        <!-- <table>
             <thead>
                 <tr>
-                    <th>Name</th>
+                    <th class=>Name</th>
                     <th>Date</th>
                     <th>Feedback</th>
                 </tr>
@@ -77,16 +83,18 @@
             <tbody>
                 <% project.feedbacks.forEach(function(r) { %>
                     <tr>
-                        <td>
+                        <td class="comment">
                             <%= r.userName %> 
                         </td>
-                        <td>
+                        <td class="comment">
                             <%= r.createdAt.toLocaleDateString() %>
                         </td>
-                        <td>
+                        <td class="comment">
                             <%= r.content %>
                         </td>
-                    </tr>
+                    </tr> -->
+
+                    <%= r.userName %> <%= r.createdAt.toLocaleDateString() %>  <%= r.content %>
 
                     <% }) %>
             </tbody>
@@ -95,11 +103,7 @@
         <% } else { %>
             <h5>No Feedback Yet</h5>
         <% } %>
-        <% if (user) { %>
-            <% if (project.user.equals(user._id)) { %>
-                <a href="/projects/<%= project.id %>/edit">Edit Project</a>
-            <% } %>
-        <% } %>
+       
        
             
     </section>

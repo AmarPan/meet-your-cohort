@@ -231,6 +231,9 @@ footer {
   color:red;
 }
 
+.comment {
+  margin: 10px;
+}
 
 body ul:nth-child(even){
   color: yellow;
