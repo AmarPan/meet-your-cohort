@@ -209,6 +209,15 @@ footer {
   border: 5px solid gray;
 }
 
+#delete-form {
+  display: flex;
+}
+
+#card {
+ height: 135px;
+ display: inline-block;
+}
+
 
 body ul:nth-child(even){
   color: yellow;

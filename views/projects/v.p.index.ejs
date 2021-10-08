@@ -21,20 +21,32 @@
     <a href="/projects/new">Add new project</a>
     <ul id="all-projects">
         <% projects.forEach(p=> { %>
-            <li>
+            <li id="card">
+                
                 <img id="indiv" src="/images/favicon.ico" alt=""><br>
-                <p id="full-title">
-                    <style>
-                        li p {
-                            color: red;
-                        }
-                    </style>
-                    <%= p.title %> by <%= p.author %>
-                </p>
-                <a id="feedback-button" href="/projects/<%= p.id %>">DETAILS</a>
-                <form class="delete-form" action="/projects/<%= p.id %>?_method=DELETE" method="POST">
-                    <button type="submit">X</button>
-                </form>
+                <% if (p.user.equals(user._id)) { %>
+                    <form class="delete-form" action="/projects/<%= p.id %>?_method=DELETE" method="POST">
+                        <button type="submit">X</button>
+                    </form>
+                    <% } else {%>
+                     <br>
+                     <% } %>
+               
+                    <p id="full-title">
+                        <style>
+                            li p {
+                                color: red;
+                            }
+                        </style>
+                        <%= p.title %> <br> <%= p.author %>
+                        TEST
+
+                    </p>
+                    
+                    <a id="feedback-button" href="/projects/<%= p.id %>">DETAILS</a>
+        
+
+
 
             </li>
             <% }) %>

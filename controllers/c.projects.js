@@ -16,6 +16,8 @@ module.exports = {
 function edit(req,res){
     Project.findById(req.params.id, function(err, foundProject){
         console.log(foundProject);
+        if (!foundProject.user.equals(req.user._id)) return res.redirect('/projects');
+        console.log(foundProject, "<--LOOK AT ID")
         res.render('projects/v.p.edit.ejs', {
             project: foundProject
         })
@@ -101,9 +103,15 @@ function create(req, res) {
             console.log(err);
             return res.redirect('/new')
         }
+        console.log(createdProject, "<---FIRST")
+        createdProject.user = req.user._id
+        console.log(createdProject, "<---SECOND")
 
-        console.log(createdProject, "<-- createdProject");
-        res.redirect('/projects')
+        createdProject.save(function(err){
+            console.log(createdProject, "<---THIRD")
+            res.redirect(`/projects/${createdProject._id}`)
+        })
+        
     })
 }
 
