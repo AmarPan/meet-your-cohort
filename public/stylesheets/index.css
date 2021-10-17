@@ -188,8 +188,9 @@ footer {
 }
 
 #card {
- height: 135px;
  display: inline-block;
+ margin: 5px 10px;
+ height: 200px;
 }
 
 #full-title {
