@@ -27,28 +27,28 @@
             </tr>
             <tr>
                 <td><br></td>
-                <td>Deployed Project Link: <span class="black"><a href="<%= project.link %>" target="_blank">
+                <td><br>Deployed Project Link:<br><span class="black"><a href="<%= project.link %>" target="_blank">
                             <%= project.link %>
-                        </a><br></span> </td>
+                        </a><br><br></span> </td>
                 <td><br></td>
             </tr>
             <tr>
                 <td><br></td>
-                <td>Project README: <span class="black"><a href="<%= project.readMe %>" target="_blank">
+                <td>Project README: <br><span class="black"><a href="<%= project.readMe %>" target="_blank">
                             <%= project.readMe %>
                         </a></span> </td>
                 <td><br></td>
             </tr>
             <tr>
                 <td><br></td>
-                <td>Description: <span class="black">
+                <td><br>Description:<br> <span class="black">
                         <%= project.descript %>
                     </span> </td>
                 <td><br></td>
             </tr>
             <tr>
                 <td><br></td>
-                <td>What I'm Looking for Feedback On: <span class="black">
+                <td><br>What I'm Looking for Feedback On:<br> <span class="black">
                         <%= project.feedbackType %>
                     </span> </td>
                 <td><br></td>
@@ -64,7 +64,7 @@
                             <td>
                                 <form id="feedback-form" action="/projects/<%= project._id %>/feedback" method="POST">
                                     <label>
-                                        <ul>Feedback / Comments / Suggestions:</ul>
+                                        <ul><br>Feedback / Comments / Suggestions:</ul>
                                     </label>
                                     <textarea id="feedback-box" name="content"
                                         placeholder="I love the way you...I found a bug...Maybe you could add... "></textarea><br>

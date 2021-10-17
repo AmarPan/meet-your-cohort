@@ -13,7 +13,7 @@ Review My Project is a simple hub where software engineering students can share 
 
 
 ## Technologies Used
-Node.js, Express, MongoDB, Mongoose, Heroku, Javascript, HTML, CSS, and Lots of Red Bull
+Node.js, Express, MongoDB, Mongoose, Google Oauth, Heroku, Javascript, HTML, CSS, and Lots of Red Bull
 
 ## Getting Started
 1. Click "Add New Project"
