@@ -68,21 +68,31 @@
                                     </label>
                                     <textarea id="feedback-box" name="content"
                                         placeholder="I love the way you...I found a bug...Maybe you could add... "></textarea><br>
-                                    <input type="submit" value="Submit Feedback">
+                                    <input id="submit-feedback" type="submit" value="Submit Feedback">
                                 </form>
                             </td>
                             <td></td>
                             </tr>
         </table>
         <% if (project.feedbacks.length) { %>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Date</th>
+                        <th></th>
+                    </tr>
+                </thead>
+    
+                
             <% project.feedbacks.forEach(function(r) { %>
 
-                <%= r.userName %>
-                    <%= r.createdAt.toLocaleDateString() %> <span class="black">
-                            <%= r.content %><br>
-                        </span>
-                        <% }) %>
-
+                <tr class=>
+                    <td><%= r.userName %></td>
+                    <td><%= r.createdAt.toLocaleDateString() %> <td>
+                    <td class="black"><%= r.content %> </td>
+                </tr>
+                        <% }) %> 
                             <% } else { %>
                                 <h5>No Feedback Yet</h5>
                                 <% } %>

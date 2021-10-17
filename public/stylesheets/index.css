@@ -214,6 +214,10 @@ footer {
   margin: 10px;
 }
 
+#submit-feedback {
+  width: 200px;
+}
+
 body ul:nth-child(even){
   color: yellow;
 }
