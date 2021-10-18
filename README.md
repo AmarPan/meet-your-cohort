@@ -1,10 +1,10 @@
-# REVIEW MY PROJECT by Amar Panjwani
+# REVIEW MY PROJECT HUB by Amar Panjwani
 
 ### Link to deployed app: https://reviewmyproject.herokuapp.com/
 
 ## Description
 
-Review My Project is a simple hub where software engineering students can share their current projects and receive feedback on them from their peers.
+Review My Project Hub is a place where software engineering students can post their recent projects and receive feedback on them from their peers.
 
 
 ## Screenshots
