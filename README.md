@@ -10,7 +10,7 @@ Review My Project Hub is a place where software engineering students can post th
 | Screenshot | Description |
 |------------ | ------------|
 | <h3 align="center">All Projects</h3> | <img src="/public/images/RMPIndex.jpg" width="800">  
-| <h3 align="center">Project Details</h3> | <img src="/public/images/RMPShow.jpg" width="8000"> 
+| <h3 align="center">Project Details</h3> | <img src="/public/images/RMPShow.jpg" width="800"> 
 
 ## Technologies Used
 Node.js | Express | MongoDB | Mongoose | Google Oauth | Heroku | Javascript | HTML | CSS
