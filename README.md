@@ -1,6 +1,6 @@
 # <h1 align="center">REVIEW MY PROJECT HUB</h1>
  #### <h3 align="center">https://reviewmyproject.herokuapp.com</h3>
- <h5 align="center">by Amar Panjwani</h5>
+ <h5 align="center">Amar Panjwani</h5>
 
 ## Description
 
