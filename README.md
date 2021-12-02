@@ -4,7 +4,7 @@
 
 ## Description
 
-Review My Project Hub is a place where software engineering students can post their recent projects and receive feedback on them from their peers.
+Review My Project Hub is a place where software engineering students can post their recent projects and receive feedback on them from their peers and teachers.
 
 ## Screenshots
 | Screenshot | Description |
