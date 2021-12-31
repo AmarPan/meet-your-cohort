@@ -1,6 +1,24 @@
 # <h1 align="center">:gear: REVIEW MY PROJECT HUB :gear: </h1>
  #### <h3 align="center">https://reviewmyproject.herokuapp.com</h3>
- <h5 align="center">Amar Panjwani</h5>
+ <h5 align="center">Pan Amar</h5>
+
+ <div align="center">
+ <a href="https://panamruth.github.io/portfolio" target="_blank">
+    <img src="https://img.shields.io/badge/-panamruth.github.io/portfolio-darkgreen?style=flat&logo=medium">
+ </a>
+    
+ <a href="https://www.linkedin.com/in/panamruth/" target="_blank">
+      <img src="https://img.shields.io/badge/-linkedin.com/in/panamruth-blue?style=flat&logo=Linkedin&logoColor=white">
+ </a> 
+    
+ <a href="mailto:pan.amruth@gmail.com" target="_blank">
+    <img src="https://img.shields.io/badge/-pan.amruth@gmail.com-c14438?style=flat&logo=Gmail&logoColor=white">
+ </a>
+    
+ <a href="https://medium.com/@panamruth">
+    <img src="https://img.shields.io/badge/-medium.com/@panamruth-black?style=flat&logo=medium">
+ </a>
+ </div>
 
 ## Description
 
