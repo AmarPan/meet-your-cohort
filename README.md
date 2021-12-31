@@ -56,7 +56,7 @@ Node.js | Express | MongoDB | Mongoose | Google Oauth | Heroku | Javascript | HT
   <a href="https://reviewmyproject.herokuapp.com">ttps://reviewmyproject.herokuapp.com</a>
 </details>
 
-## Next Steps
+## ⏭️ Next Steps
 + Add edit and delete functionality for comments
 + Allow users to upload a project screenshot that displays on their hub card
 + Email users when they get feedback on one of their projects
