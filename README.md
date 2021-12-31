@@ -1,5 +1,5 @@
 # <h1 align="center">:gear: REVIEW MY PROJECT HUB :gear: </h1>
- #### <h3 align="center"><a href="https://reviewmyproject.herokuapp.com" target="_blank">https://reviewmyproject.herokuapp.com</a></h3>
+ #### <h3 align="center">https://reviewmyproject.herokuapp.com</h3>
  <h5 align="center">Pan Amar</h5>
 
  <div align="center">
