@@ -31,7 +31,9 @@ Review My Project Hub is a place where software engineering students can post th
 | <h3 align="center">Project Details</h3> | <img src="/public/images/RMPShow.jpg" width="800"> 
 
 ## 💻 Technologies Used
-Node.js | Express | MongoDB | Mongoose | Google Oauth | Heroku | Javascript | HTML | CSS
+![Node](https://img.shields.io/badge/-Node.js-333?style=flat&logo=express) ![Express](https://img.shields.io/badge/-Express-333?style=flat&logo=express) ![MongoDB](https://img.shields.io/badge/-MongoDB-333?style=flat&logo=mongodb) ![Mongoose ODM](https://img.shields.io/badge/-Mongoose_ODM-333?style=flat&logo=mongodb) ![Heroku](https://img.shields.io/badge/-Heroku-333?style=flat&logo=heroku) ![JavaScript](https://img.shields.io/badge/-JavaScript-333?style=flat&logo=javascript) 
+![HTML5](https://img.shields.io/badge/-HTML5-333?style=flat&logo=html5)
+![CSS3](https://img.shields.io/badge/-CSS-333?style=flat&logo=css3)
 
 ## ⚛️ Getting Started
 <details>
