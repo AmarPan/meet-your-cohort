@@ -20,11 +20,11 @@
  </a>
  </div>
 
-## Description
+## 📝 Description
 
 Review My Project Hub is a place where software engineering students can post their recent projects and receive feedback on them from their peers and teachers.
 
-## Screenshots
+## :camera: Screenshots
 | Screenshot | Description |
 |------------ | ------------|
 | <h3 align="center">All Projects</h3> | <img src="/public/images/RMPIndex.jpg" width="800">  
