@@ -1,4 +1,4 @@
-# <h1 align="center">REVIEW MY PROJECT HUB</h1>
+# <h1 align="center">:gear: REVIEW MY PROJECT HUB :gear: </h1>
  #### <h3 align="center">https://reviewmyproject.herokuapp.com</h3>
  <h5 align="center">Amar Panjwani</h5>
 
