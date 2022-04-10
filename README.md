@@ -47,7 +47,7 @@
 
  
  <h6 align="center" display="inline">
-   <a href="https://www.linkedin.com/in/amarpan/">Created by Amar Pan, M.Ed.
+   <a href="https://www.linkedin.com/in/amarpan/">Amar Pan, M.Ed.
       </a><br></a>
  </h6>
  
