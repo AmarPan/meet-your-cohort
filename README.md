@@ -70,7 +70,7 @@ Review My Project Hub is a place where software engineering students can post th
 ![HTML5](https://img.shields.io/badge/-HTML5-333?style=flat&logo=html5)
 ![CSS3](https://img.shields.io/badge/-CSS-333?style=flat&logo=css3)
 
-## ⚛️ Getting Started
+## 🔥 Getting Started
 <details>
   <summary>How to Use</summary>
   
