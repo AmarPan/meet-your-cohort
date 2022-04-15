@@ -35,8 +35,8 @@
       <img src="https://img.shields.io/badge/-facebook.com/amarpan396-darkblue?style=flat&logo=Facebook&logoColor=white">
  </a> 
 
- <a href="https://www.instagram.com/amarpan.us/" target="_blank">
-      <img src="https://img.shields.io/badge/-instagram.com/amarpan.us-hotpink?style=flat&logo=Instagram&logoColor=white">
+ <a href="https://www.instagram.com/amarpan396/" target="_blank">
+      <img src="https://img.shields.io/badge/-instagram.com/amarpan396-hotpink?style=flat&logo=Instagram&logoColor=white">
  </a> 
     
  
