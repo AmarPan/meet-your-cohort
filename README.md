@@ -29,7 +29,7 @@
 
 ## 📝 Description
 
-Review My Project Hub is a place where software engineering students can post their recent projects and receive feedback on them from their peers and teachers.
+Review My Project Hub is a place where General Assembly (GA) Software Engineering Immersive (SEI) students can post their recent projects and receive feedback on them from peers and teachers.
 
 ## :camera: Screenshots
 | Screenshot | Description |
