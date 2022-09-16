@@ -43,14 +43,15 @@ Review My Project Hub is a place where General Assembly (GA) Software Engineerin
 ![CSS3](https://img.shields.io/badge/-CSS-05122A?style=flat&logo=css3)
 
 ## 🔥 Getting Started
-<details>
+<details open>
   <summary>How to Use</summary>
-  
-  1. Click "Add New Project"
-  
-  2. Fill the form with information about your project, what kind of feedback you are seeking, and links to your deployed app and README
-  
-  3. Hit Submit, and provide feedback on others' projects while you wait to get some on yours!
+  <br>
+  :one: Click "Add New Project"
+ 
+ 
+  :two: Fill the form with information about your project, what kind of feedback you are seeking, and links to your deployed app and README
+ 
+  :three: Hit Submit, and provide feedback on others' projects while you wait to get some on yours!
   
 </details>
 
