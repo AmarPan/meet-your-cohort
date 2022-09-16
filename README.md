@@ -67,7 +67,7 @@ Review My Project Hub is a place where General Assembly (GA) Software Engineerin
 </details>
 
 ## ⏭️ Next Steps
-+ Add edit and delete functionality for comments
-+ Allow users to upload a project screenshot that displays on their hub card
-+ Email users when they get feedback on one of their projects
+- [ ] Add edit and delete functionality for comments
+- [ ] Allow users to upload a project screenshot that displays on their hub card
+- [ ] Email users when they get feedback on one of their projects
 
