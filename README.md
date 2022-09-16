@@ -45,7 +45,7 @@ Review My Project Hub is a place where General Assembly (GA) Software Engineerin
 ## 🔥 Getting Started
 <details open>
   <summary>How to Use</summary>
-  <br>
+
   :one: Click "Add New Project"
  
  
