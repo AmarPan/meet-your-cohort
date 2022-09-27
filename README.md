@@ -1,4 +1,9 @@
-# <h1 align="center">:gear: REVIEW MY PROJECT HUB :gear: </h1>
+<div align="center">
+
+# REVIEW MY PROJECT <br> :gear::heavy_check_mark::gear:
+
+</div>
+
  #### <h3 align="center"><a href="https://reviewmyproject.herokuapp.com">CLICK TO DEMO</a></h3>
  
  <h3 align="center" id="author">
