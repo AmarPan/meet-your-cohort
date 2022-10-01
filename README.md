@@ -1,6 +1,6 @@
 <div align="center">
 
-# REVIEW MY PROJECT <br> :gear::heavy_check_mark::gear:
+# REVIEW MY PROJECT
 
 </div>
 
