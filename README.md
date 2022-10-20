@@ -42,7 +42,7 @@ Review My Project is a hub where General Assembly (GA) Software Engineering Imme
   <summary>How to Use</summary>
 
   1. Click "Add New Project"
- 
+ <br>
  
   :two: Fill the form with information about your project, what kind of feedback you are seeking, and links to your deployed app and README
  
