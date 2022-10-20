@@ -14,9 +14,9 @@
   <br>
   [![LinkedIn Badge](https://img.shields.io/badge/-@profpan396-blue?style=flat&logo=Linkedin&logoColor=black)](https://www.linkedin.com/in/profpan396/)
   <br>
-  ![](https://visitor-badge.glitch.me/badge?page_id=profpan396.review-my-project)
-  ![Last Commit](https://img.shields.io/github/last-commit/profpan396/review-my-project)
-  ![Stars](https://img.shields.io/github/stars/profpan396/review-my-project)
+  ![Stars](https://img.shields.io/github/stars/profpan396/review-my-project?style=social)
+  ![](https://visitor-badge.laobi.icu/badge?page_id=profpan396.review-my-project)
+  ![Forks](https://img.shields.io/github/forks/profpan396/review-my-project?style=social)
   <br>
   ![Version](https://img.shields.io/badge/version-1.0-black)
 
