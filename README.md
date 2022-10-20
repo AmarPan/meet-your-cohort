@@ -49,7 +49,7 @@ Review My Project is a hub where General Assembly (GA) Software Engineering Imme
  
  <br>
 
-  3. Hit Submit, and provide feedback on others' projects while you wait to get some on yours!
+  3. Hit `Submit`, and provide feedback on others' projects while you wait to get some on yours!
   
 </details>
 
