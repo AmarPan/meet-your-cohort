@@ -48,8 +48,8 @@ Review My Project is a hub where General Assembly (GA) Software Engineering Imme
   2. Fill the form with information about your project, what kind of feedback you are seeking, and links to your deployed app and README
  
  <br>
- 
-  Hit Submit, and provide feedback on others' projects while you wait to get some on yours!
+
+  3. Hit Submit, and provide feedback on others' projects while you wait to get some on yours!
   
 </details>
 
