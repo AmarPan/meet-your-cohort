@@ -54,12 +54,12 @@ Review My Project is a hub where General Assembly (GA) Software Engineering Imme
 </details>
 
 ### 🔗 Links
-<details>
+<details open>
   <summary>Trello Board</summary>
   <a href="https://trello.com/b/BzSJZUKx/review-my-project">https://trello.com/b/BzSJZUKx/review-my-project</a>
 </details>
 
-<details>
+<details open>
   <summary>Deployed Link (Heroku)</summary>
   <a href="https://reviewmyproject.herokuapp.com">ttps://reviewmyproject.herokuapp.com</a>
 </details>
