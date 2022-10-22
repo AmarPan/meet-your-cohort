@@ -47,7 +47,6 @@ Review My Project is a hub where General Assembly (GA) Software Engineering Imme
   
 </details>
 
-### 🔗 Links
 <details open>
   <summary>Trello Board</summary>
   <a href="https://trello.com/b/BzSJZUKx/review-my-project">https://trello.com/b/BzSJZUKx/review-my-project</a>
