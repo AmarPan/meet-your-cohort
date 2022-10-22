@@ -1,7 +1,7 @@
 <div align="center" id="header">
  
 # REVIEW MY PROJECT
-[Amar Pan](https://www.linkedin.com/in/profpan396/)
+**Created by [Amar Pan](https://www.linkedin.com/in/profpan396/)**
 #### [CLICK TO DEMO](https://reviewmyproject.herokuapp.com) 
  
 </div>
