@@ -59,7 +59,7 @@ Review My Project is a hub where General Assembly (GA) Software Engineering Imme
 </details>
 
 ## ⏭️ Next Steps
-- [ ] Add edit and delete functionality for comments
-- [ ] Allow users to upload a project screenshot that displays on their hub card
-- [ ] Email users when they get feedback on one of their projects
+- [:x:] Add edit and delete functionality for comments
+- [:x:] Allow users to upload a project screenshot that displays on their hub card
+- [:x:] Email users when they get feedback on one of their projects
 
