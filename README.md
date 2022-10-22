@@ -61,7 +61,7 @@ Review My Project is a hub where General Assembly (GA) coding bootcamp students 
   <a href="https://reviewmyproject.herokuapp.com">ttps://reviewmyproject.herokuapp.com</a>
 </details>
 
-## ⏭️ Upcoming Features
+## :satellite: Upcoming Features
 - [:x:] Edit and delete functionality for comments
 - [:x:] Project screenshot preview on hub cards
 - [:x:] Email users when they get project feedback
