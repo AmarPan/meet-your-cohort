@@ -26,7 +26,7 @@
 
 Review My Project is a hub where General Assembly (GA) Software Engineering Immersive (SEI) coding bootcamp students can post their projects and receive feedback on them from peers and teachers.
 
-## :camera: Screenshots
+## :camera_flash: Screenshots
 | Screenshot | Description |
 |------------ | ------------|
 | <h3 align="center">All Projects</h3> | <img src="/public/images/RMPIndex.jpg" width="800">  
