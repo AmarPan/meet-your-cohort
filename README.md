@@ -1,7 +1,7 @@
 <div align="center" id="header">
  
 # REVIEW MY PROJECT
-**Created by [Amar Pan](https://www.linkedin.com/in/profpan396/)**
+**Created by [Amar Panjwani](https://www.linkedin.com/in/amarpan/)**
 #### [CLICK TO DEMO](https://reviewmyproject.herokuapp.com) 
  
 </div>
@@ -10,13 +10,13 @@
  
  <div align="center" id="socialbuttons">
 
- [![Portfolio Badge](https://img.shields.io/badge/-profpan396.github.io-magenta?style=flat&logo=)](https://profpan396.github.io)
+ [![Portfolio Badge](https://img.shields.io/badge/-amarpan.github.io-magenta?style=flat&logo=)](https://amarpan.github.io)
   <br>
-  [![LinkedIn Badge](https://img.shields.io/badge/-@profpan396-blue?style=flat&logo=Linkedin&logoColor=black)](https://www.linkedin.com/in/profpan396/)
+  [![LinkedIn Badge](https://img.shields.io/badge/-@amarpan-blue?style=flat&logo=Linkedin&logoColor=black)](https://www.linkedin.com/in/amarpan/)
   <br>
-  ![Stars](https://img.shields.io/github/stars/profpan396/review-my-project?style=social)
-  ![](https://visitor-badge.laobi.icu/badge?page_id=profpan396.review-my-project)
-  ![Forks](https://img.shields.io/github/forks/profpan396/review-my-project?style=social)
+  ![Stars](https://img.shields.io/github/stars/amarpan/review-my-project?style=social)
+  ![](https://visitor-badge.laobi.icu/badge?page_id=amarpan.review-my-project)
+  ![Forks](https://img.shields.io/github/forks/amarpan/review-my-project?style=social)
   <br>
   ![Version](https://img.shields.io/badge/version-1.0-black)
 
